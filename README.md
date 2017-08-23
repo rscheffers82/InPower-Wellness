@@ -1,1 +1,1 @@
-# in-power-wellness
+# Repo for InPower Wellness child theme
