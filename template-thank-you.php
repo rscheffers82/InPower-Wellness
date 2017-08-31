@@ -24,7 +24,7 @@ Template Name: Thank you page
 
 		    <main id="main" class="large-6 large-offset-2 small-12 columns" role="main">
 
-					<h2 class="thanks-header">Congrats Jessica. The first step to make your workplace even more awesome is V.</h2>
+					<h2 class="thanks-header">Congrats Jessica. The first step to make your workplace even more awesome is <i class="fa fa-check" aria-hidden="true"></i>.</h2>
 
 					<div class="thanks-message">
 						Thank you! Your information has been submitted to InPower.
@@ -41,15 +41,33 @@ Template Name: Thank you page
 						<?php
 							$args = array( 'numberposts' => '1' );
 							$recent_posts = wp_get_recent_posts( $args );
-							foreach( $recent_posts as $recent ){
-								echo '<li>';
+							foreach( $recent_posts as $recent ) {
+								$words = explode(" ", $recent["post_content"]);
+								$short_content = implode(" ", array_splice($words, 0, 25));
+								?>
+
+								<div class="media-object">
+								  <div class="media-object-section">
+								    <?php the_post_thumbnail(); ?>
+								  </div>
+								  <div class="media-object-section">
+								    <h4><?php echo $recent["post_title"]; ?></h4>
+								    <p>
+											<?php echo $short_content; ?>
+											<a href=' <?php get_permalink($recent["ID"]) ?>' class="button">Read It</a>
+										</p>
+								  </div>
+								</div>
+
+								<!-- echo '<li>';
 								the_post_thumbnail();
 								echo '<h2>' . $recent["post_title"] . '</h2>';
 								// strip the first 25 words of the post content
 								$words = explode(" ", $recent["post_content"]);
 								echo '<div class="post-content">' . implode(" ", array_splice($words, 0, 25)) . '</div>';
 								echo '<a href=' . get_permalink($recent["ID"]) . ' class="button">Read It</a>';
-								echo '</li>';
+								echo '</li>'; -->
+							<?php
 							}
 							wp_reset_query();
 						?>
