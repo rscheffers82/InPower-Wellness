@@ -9,6 +9,11 @@ Template Name: Home
 		border: 1px solid #ccc;
 		margin: 2.5rem auto;
 	}
+	.temp {
+		height: 300px;
+		background-color:#F9F8F4;
+		width:80%;
+	}
 </style>
 
 <?php get_header(); ?>
@@ -28,7 +33,7 @@ Template Name: Home
 
 
 				<!-- Additional content section -->
-				<section class="" style="height: 300px; background-color:#F9F8F4; width:80%;">
+				<section class="temp">
 				</section>
 
 				<!-- Testimonial section -->
