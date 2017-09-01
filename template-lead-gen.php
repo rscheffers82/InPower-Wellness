@@ -28,6 +28,9 @@ Template Name: Lead Generation
 			    	<?php get_template_part( 'parts/loop', 'page' ); ?>
 			    <?php endwhile; endif; ?>
 
+					<?php // $params = array('fname' => 'Jessica', 'department' => 'design'); ?>
+					<?php $params = array('fname' => 'Jessica'); ?>
+					<a class="button" href="https://dev.inpowerwellness.com/thank-you/?fname=Roy&fcontact=phone&fdate=September%2011th&ftime=9am">Roy go to Thank you!</a>
 			</main> <!-- end #main -->
 
 
@@ -35,5 +38,4 @@ Template Name: Lead Generation
 		</div> <!-- end #inner-content -->
 
 	</div> <!-- end #content -->
-
 <?php get_footer(); ?>

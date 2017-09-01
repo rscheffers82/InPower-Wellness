@@ -22,3 +22,22 @@ jQuery(document).ready(function() {
   });
 
 });
+
+// code for redirecting to the thank-you page
+// Also fetch the vars from the form and add them as params to the url
+
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+  var inputs = event.detail.inputs;
+
+  var details = [];
+  var name;
+  for ( var i = 0; i < inputs.length; i++ ) {
+    if ( 'your-name' == inputs[i].name ) {
+        details[name] = inputs[i].value;
+        name = inputs[i].value;
+        break;
+    }
+  }
+  var params = '?fname=' + name;
+  location = 'https://dev.inpowerwellness.com/thank-you/?fname=roy';
+}, false );

@@ -24,16 +24,30 @@ Template Name: Thank you page
 
 		    <main id="main" class="large-6 large-offset-2 small-12 columns" role="main">
 
-					<h2 class="thanks-header">Congrats Jessica. The first step to make your workplace even more awesome is <i class="fa fa-check" aria-hidden="true"></i>.</h2>
+					<h2 class="thanks-header">Congrats <?php echo get_query_var( 'fname' ); ?>. The first step to make your workplace even more awesome is <i class="fa fa-check" aria-hidden="true"></i>.</h2>
 
 					<div class="thanks-message">
 						Thank you! Your information has been submitted to InPower.
 
-						Caitlin Bourassa, Owner, will be contacting you shortly to follow up on your inquiry. Based on your preference, she'll be getting a hold of you via phone on September 11th at 9am.
+						Caitlin Bourassa, Owner, will be contacting you shortly to follow up on your inquiry.
 
+						<?php
+							$fcontact = get_query_var( 'fcontact' );
+							$fdate = get_query_var( 'fdate' );
+ 							$ftime = get_query_var( 'ftime' );
+
+							if ($fcontact == 'phone') {
+								$display_text = 'Based on your preference, she\'ll be getting a hold of you via phone on ' . $fdate . ' at ' . $ftime . '.';
+							} elseif ($fcontact == 'email') {
+								$display_text = 'Based on your preference, she\'ll be getting a hold of you via email.';
+							} else {
+								$display_text = '';
+							}
+							echo $display_text;
+						?>
+						<br /><br />
 						You're done!
 					</div>
-
 
 					But if you want to learn more about how workplace wellness is changing how companies work check out Caitlin's latest article.
 
