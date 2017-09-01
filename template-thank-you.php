@@ -4,9 +4,6 @@ Template Name: Thank you page
 */
 ?>
 
-<style>
-
-</style>
 <?php get_header(); ?>
 
 <style>

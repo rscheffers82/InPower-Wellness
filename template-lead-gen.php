@@ -23,17 +23,10 @@ Template Name: Lead Generation
 			</div>
 
 		    <main id="main" class="large-7 medium-7 small-12 columns end" role="main">
-
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			    	<?php get_template_part( 'parts/loop', 'page' ); ?>
 			    <?php endwhile; endif; ?>
-
-					<?php // $params = array('fname' => 'Jessica', 'department' => 'design'); ?>
-					<?php $params = array('fname' => 'Jessica'); ?>
-					<a class="button" href="https://dev.inpowerwellness.com/thank-you/?fname=Roy&fcontact=phone&fdate=September%2011th&ftime=9am">Roy go to Thank you!</a>
 			</main> <!-- end #main -->
-
-
 
 		</div> <!-- end #inner-content -->
 

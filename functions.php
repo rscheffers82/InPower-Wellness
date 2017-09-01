@@ -42,9 +42,16 @@ require_once(get_template_directory().'/assets/translation/translation.php');
 // Customize the WordPress admin
 // require_once(get_template_directory().'/assets/functions/admin.php');
 
+// ******************************************************** \\
+// *                                                      * \\
+// *        Additions needed for InPowerWellness          * \\
+// *                                                      * \\
+// ******************************************************** \\
+
 // add fallback for date field for older browsers and FF
 add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
 
+// Tell WordPress to allow these query params
 function add_custom_query_var( $vars ){
   $vars[] = "fname";
   $vars[] = "fcontact";
