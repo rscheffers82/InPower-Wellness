@@ -1,4 +1,15 @@
 				<footer class="footer" role="contentinfo">
+
+					<!-- For Footer Widgets -->
+					<div class="footerTop">
+							<div id="footerwidgets" class="row">
+								<?php
+									if ( is_active_sidebar( 'footer' ) ) :
+										dynamic_sidebar( 'footer' );
+									endif; ?>
+							</div>
+					</div><!-- end .footerTop -->
+
 					<div id="inner-footer" class="row">
 						<div class="large-12 medium-12 columns">
 							<nav role="navigation">
