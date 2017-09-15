@@ -32,10 +32,10 @@ this._plugins[attrName]=this[className]=_plugin;},/**
    * Also fires the destroyed event for the plugin, consolidating repetitive code.
    * @param {Object} plugin - an instance of a plugin, usually `this` in context.
    * @fires Plugin#destroyed
-   */unregisterPlugin:function unregisterPlugin(plugin){var pluginName=hyphenate(functionName(plugin.$element.data('zfPlugin').constructor));this._uuids.splice(this._uuids.indexOf(plugin.uuid),1);plugin.$element.removeAttr('data-'+pluginName).removeData('zfPlugin'/**
+   */unregisterPlugin:function unregisterPlugin(plugin){var pluginName=hyphenate(functionName(plugin.$element.data('zfPlugin').constructor));this._uuids.splice(this._uuids.indexOf(plugin.uuid),1);plugin.$element.removeAttr('data-'+pluginName).removeData('zfPlugin')/**
            * Fires when the plugin has been destroyed.
            * @event Plugin#destroyed
-           */).trigger('destroyed.zf.'+pluginName);for(var prop in plugin){plugin[prop]=null;//clean up script to prep for garbage collection.
+           */.trigger('destroyed.zf.'+pluginName);for(var prop in plugin){plugin[prop]=null;//clean up script to prep for garbage collection.
 }return;},/**
    * @function
    * Causes one or more active plugins to re-initialize, resetting event listeners, recalculating positions, etc.
@@ -1064,7 +1064,7 @@ this._setPosition();this.$element.addClass('is-open').attr({'aria-hidden':false}
    * Closes the open dropdown pane.
    * @function
    * @fires Dropdown#hide
-   */},{key:'close',value:function close(){if(!this.$element.hasClass('is-open')){return false;}this.$element.removeClass('is-open').attr({'aria-hidden':true});this.$anchor.removeClass('hover').attr('aria-expanded',false);if(this.classChanged){var curPositionClass=this.getPositionClass();if(curPositionClass){this.$element.removeClass(curPositionClass);}this.$element.addClass(this.options.positionClass/*.hide()*/).css({height:'',width:''});this.classChanged=false;this.counter=4;this.usedPositions.length=0;}/**
+   */},{key:'close',value:function close(){if(!this.$element.hasClass('is-open')){return false;}this.$element.removeClass('is-open').attr({'aria-hidden':true});this.$anchor.removeClass('hover').attr('aria-expanded',false);if(this.classChanged){var curPositionClass=this.getPositionClass();if(curPositionClass){this.$element.removeClass(curPositionClass);}this.$element.addClass(this.options.positionClass)/*.hide()*/.css({height:'',width:''});this.classChanged=false;this.counter=4;this.usedPositions.length=0;}/**
      * Fires once the dropdown is no longer visible.
      * @event Dropdown#hide
      */this.$element.trigger('hide.zf.dropdown',[this.$element]);if(this.options.trapFocus){Foundation.Keyboard.releaseFocus(this.$element);}}/**
@@ -1401,79 +1401,6 @@ else{$.get(path,function(response){_this.$element.html(response).trigger(trigger
    */rules:null};Interchange.SPECIAL_QUERIES={'landscape':'screen and (orientation: landscape)','portrait':'screen and (orientation: portrait)','retina':'only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)'};// Window exports
 Foundation.plugin(Interchange,'Interchange');}(jQuery);
 'use strict';var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}!function($){/**
- * Magellan module.
- * @module foundation.magellan
- */var Magellan=function(){/**
-   * Creates a new instance of Magellan.
-   * @class
-   * @fires Magellan#init
-   * @param {Object} element - jQuery object to add the trigger to.
-   * @param {Object} options - Overrides to the default plugin settings.
-   */function Magellan(element,options){_classCallCheck(this,Magellan);this.$element=element;this.options=$.extend({},Magellan.defaults,this.$element.data(),options);this._init();this.calcPoints();Foundation.registerPlugin(this,'Magellan');}/**
-   * Initializes the Magellan plugin and calls functions to get equalizer functioning on load.
-   * @private
-   */_createClass(Magellan,[{key:'_init',value:function _init(){var id=this.$element[0].id||Foundation.GetYoDigits(6,'magellan');var _this=this;this.$targets=$('[data-magellan-target]');this.$links=this.$element.find('a');this.$element.attr({'data-resize':id,'data-scroll':id,'id':id});this.$active=$();this.scrollPos=parseInt(window.pageYOffset,10);this._events();}/**
-   * Calculates an array of pixel values that are the demarcation lines between locations on the page.
-   * Can be invoked if new elements are added or the size of a location changes.
-   * @function
-   */},{key:'calcPoints',value:function calcPoints(){var _this=this,body=document.body,html=document.documentElement;this.points=[];this.winHeight=Math.round(Math.max(window.innerHeight,html.clientHeight));this.docHeight=Math.round(Math.max(body.scrollHeight,body.offsetHeight,html.clientHeight,html.scrollHeight,html.offsetHeight));this.$targets.each(function(){var $tar=$(this),pt=Math.round($tar.offset().top-_this.options.threshold);$tar.targetPoint=pt;_this.points.push(pt);});}/**
-   * Initializes events for Magellan.
-   * @private
-   */},{key:'_events',value:function _events(){var _this=this,$body=$('html, body'),opts={duration:_this.options.animationDuration,easing:_this.options.animationEasing};$(window).one('load',function(){if(_this.options.deepLinking){if(location.hash){_this.scrollToLoc(location.hash);}}_this.calcPoints();_this._updateActive();});this.$element.on({'resizeme.zf.trigger':this.reflow.bind(this),'scrollme.zf.trigger':this._updateActive.bind(this)}).on('click.zf.magellan','a[href^="#"]',function(e){e.preventDefault();var arrival=this.getAttribute('href');_this.scrollToLoc(arrival);});$(window).on('popstate',function(e){if(_this.options.deepLinking){_this.scrollToLoc(window.location.hash);}});}/**
-   * Function to scroll to a given location on the page.
-   * @param {String} loc - a properly formatted jQuery id selector. Example: '#foo'
-   * @function
-   */},{key:'scrollToLoc',value:function scrollToLoc(loc){// Do nothing if target does not exist to prevent errors
-if(!$(loc).length){return false;}this._inTransition=true;var _this=this,scrollPos=Math.round($(loc).offset().top-this.options.threshold/2-this.options.barOffset);$('html, body').stop(true).animate({scrollTop:scrollPos},this.options.animationDuration,this.options.animationEasing,function(){_this._inTransition=false;_this._updateActive();});}/**
-   * Calls necessary functions to update Magellan upon DOM change
-   * @function
-   */},{key:'reflow',value:function reflow(){this.calcPoints();this._updateActive();}/**
-   * Updates the visibility of an active location link, and updates the url hash for the page, if deepLinking enabled.
-   * @private
-   * @function
-   * @fires Magellan#update
-   */},{key:'_updateActive',value:function _updateActive()/*evt, elem, scrollPos*/{if(this._inTransition){return;}var winPos=/*scrollPos ||*/parseInt(window.pageYOffset,10),curIdx;if(winPos+this.winHeight===this.docHeight){curIdx=this.points.length-1;}else if(winPos<this.points[0]){curIdx=undefined;}else{var isDown=this.scrollPos<winPos,_this=this,curVisible=this.points.filter(function(p,i){return isDown?p-_this.options.barOffset<=winPos:p-_this.options.barOffset-_this.options.threshold<=winPos;});curIdx=curVisible.length?curVisible.length-1:0;}this.$active.removeClass(this.options.activeClass);this.$active=this.$links.filter('[href="#'+this.$targets.eq(curIdx).data('magellan-target')+'"]').addClass(this.options.activeClass);if(this.options.deepLinking){var hash="";if(curIdx!=undefined){hash=this.$active[0].getAttribute('href');}if(hash!==window.location.hash){if(window.history.pushState){window.history.pushState(null,null,hash);}else{window.location.hash=hash;}}}this.scrollPos=winPos;/**
-     * Fires when magellan is finished updating to the new active element.
-     * @event Magellan#update
-     */this.$element.trigger('update.zf.magellan',[this.$active]);}/**
-   * Destroys an instance of Magellan and resets the url of the window.
-   * @function
-   */},{key:'destroy',value:function destroy(){this.$element.off('.zf.trigger .zf.magellan').find('.'+this.options.activeClass).removeClass(this.options.activeClass);if(this.options.deepLinking){var hash=this.$active[0].getAttribute('href');window.location.hash.replace(hash,'');}Foundation.unregisterPlugin(this);}}]);return Magellan;}();/**
- * Default settings for plugin
- */Magellan.defaults={/**
-   * Amount of time, in ms, the animated scrolling should take between locations.
-   * @option
-   * @type {number}
-   * @default 500
-   */animationDuration:500,/**
-   * Animation style to use when scrolling between locations. Can be `'swing'` or `'linear'`.
-   * @option
-   * @type {string}
-   * @default 'linear'
-   * @see {@link https://api.jquery.com/animate|Jquery animate}
-   */animationEasing:'linear',/**
-   * Number of pixels to use as a marker for location changes.
-   * @option
-   * @type {number}
-   * @default 50
-   */threshold:50,/**
-   * Class applied to the active locations link on the magellan container.
-   * @option
-   * @type {string}
-   * @default 'active'
-   */activeClass:'active',/**
-   * Allows the script to manipulate the url of the current page, and if supported, alter the history.
-   * @option
-   * @type {boolean}
-   * @default false
-   */deepLinking:false,/**
-   * Number of pixels to offset the scroll of the page on item click if using a sticky nav bar.
-   * @option
-   * @type {number}
-   * @default 0
-   */barOffset:0// Window exports
-};Foundation.plugin(Magellan,'Magellan');}(jQuery);
-'use strict';var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}!function($){/**
  * OffCanvas module.
  * @module foundation.offcanvas
  * @requires foundation.util.keyboard
@@ -1528,10 +1455,10 @@ if(this.options.contentScroll===false){$('body').addClass('is-off-canvas-open').
    * @function
    * @param {Function} cb - optional cb to fire after closure.
    * @fires OffCanvas#closed
-   */},{key:'close',value:function close(cb){if(!this.$element.hasClass('is-open')||this.isRevealed){return;}var _this=this;_this.$element.removeClass('is-open');this.$element.attr('aria-hidden','true'/**
+   */},{key:'close',value:function close(cb){if(!this.$element.hasClass('is-open')||this.isRevealed){return;}var _this=this;_this.$element.removeClass('is-open');this.$element.attr('aria-hidden','true')/**
        * Fires when the off-canvas menu opens.
        * @event OffCanvas#closed
-       */).trigger('closed.zf.offcanvas');// If `contentScroll` is set to false, remove class and re-enable scrolling on touch devices.
+       */.trigger('closed.zf.offcanvas');// If `contentScroll` is set to false, remove class and re-enable scrolling on touch devices.
 if(this.options.contentScroll===false){$('body').removeClass('is-off-canvas-open').off('touchmove',this._stopScrolling);this.$element.off('touchstart',this._recordScrollable);this.$element.off('touchmove',this._stopScrollPropagation);}if(this.options.contentOverlay===true){this.$overlay.removeClass('is-visible');}if(this.options.closeOnClick===true&&this.options.contentOverlay===true){this.$overlay.removeClass('is-closable');}this.$triggers.attr('aria-expanded','false');if(this.options.trapFocus===true){this.$element.siblings('[data-off-canvas-content]').removeAttr('tabindex');Foundation.Keyboard.releaseFocus(this.$element);}}/**
    * Toggles the off-canvas menu open or closed.
    * @function
@@ -1655,16 +1582,16 @@ if(cb){cb(max);}//fire callback with max height dimension.
 //***************************************
 //
 this.$element.off('.resizeme.zf.trigger').on({'resizeme.zf.trigger':this._prepareForOrbit.bind(this)});if(this.$slides.length>1){if(this.options.swipe){this.$slides.off('swipeleft.zf.orbit swiperight.zf.orbit').on('swipeleft.zf.orbit',function(e){e.preventDefault();_this.changeSlide(true);}).on('swiperight.zf.orbit',function(e){e.preventDefault();_this.changeSlide(false);});}//***************************************
-if(this.options.autoPlay){this.$slides.on('click.zf.orbit',function(){_this.$element.data('clickedOn',_this.$element.data('clickedOn')?false:true);_this.timer[_this.$element.data('clickedOn')?'pause':'start']();});if(this.options.pauseOnHover){this.$element.on('mouseenter.zf.orbit',function(){_this.timer.pause();}).on('mouseleave.zf.orbit',function(){if(!_this.$element.data('clickedOn')){_this.timer.start();}});}}if(this.options.navButtons){var $controls=this.$element.find('.'+this.options.nextClass+', .'+this.options.prevClass);$controls.attr('tabindex',0//also need to handle enter/return and spacebar key presses
-).on('click.zf.orbit touchend.zf.orbit',function(e){e.preventDefault();_this.changeSlide($(this).hasClass(_this.options.nextClass));});}if(this.options.bullets){this.$bullets.on('click.zf.orbit touchend.zf.orbit',function(){if(/is-active/g.test(this.className)){return false;}//if this is active, kick out of function.
+if(this.options.autoPlay){this.$slides.on('click.zf.orbit',function(){_this.$element.data('clickedOn',_this.$element.data('clickedOn')?false:true);_this.timer[_this.$element.data('clickedOn')?'pause':'start']();});if(this.options.pauseOnHover){this.$element.on('mouseenter.zf.orbit',function(){_this.timer.pause();}).on('mouseleave.zf.orbit',function(){if(!_this.$element.data('clickedOn')){_this.timer.start();}});}}if(this.options.navButtons){var $controls=this.$element.find('.'+this.options.nextClass+', .'+this.options.prevClass);$controls.attr('tabindex',0)//also need to handle enter/return and spacebar key presses
+.on('click.zf.orbit touchend.zf.orbit',function(e){e.preventDefault();_this.changeSlide($(this).hasClass(_this.options.nextClass));});}if(this.options.bullets){this.$bullets.on('click.zf.orbit touchend.zf.orbit',function(){if(/is-active/g.test(this.className)){return false;}//if this is active, kick out of function.
 var idx=$(this).data('slide'),ltr=idx>_this.$slides.filter('.is-active').data('slide'),$slide=_this.$slides.eq(idx);_this.changeSlide(ltr,$slide,idx);});}if(this.options.accessible){this.$wrapper.add(this.$bullets).on('keydown.zf.orbit',function(e){// handle keyboard event with keyboard util
 Foundation.Keyboard.handleKey(e,'Orbit',{next:function next(){_this.changeSlide(true);},previous:function previous(){_this.changeSlide(false);},handled:function handled(){// if bullet is focused, make sure focus moves
 if($(e.target).is(_this.$bullets)){_this.$bullets.filter('.is-active').focus();}}});});}}}/**
    * Resets Orbit so it can be reinitialized
    */},{key:'_reset',value:function _reset(){// Don't do anything if there are no slides (first run)
 if(typeof this.$slides=='undefined'){return;}if(this.$slides.length>1){// Remove old events
-this.$element.off('.zf.orbit').find('*').off('.zf.orbit'// Restart timer if autoPlay is enabled
-);if(this.options.autoPlay){this.timer.restart();}// Reset all sliddes
+this.$element.off('.zf.orbit').find('*').off('.zf.orbit');// Restart timer if autoPlay is enabled
+if(this.options.autoPlay){this.timer.restart();}// Reset all sliddes
 this.$slides.each(function(el){$(el).removeClass('is-active is-active is-in').removeAttr('aria-live').hide();});// Show the first slide
 this.$slides.first().addClass('is-active').show();// Triggers when the slide has finished animating
 this.$element.trigger('slidechange.zf.orbit',[this.$slides.first()]);// Select first bullet if bullets are present
@@ -2154,8 +2081,8 @@ value=this._adjustValue(null,val);hasVal=true;}this._setHandlePos($handle,value,
    * @private
    * @param {jQuery} $handle - the current handle to apply listeners to.
    */},{key:'_eventsForHandle',value:function _eventsForHandle($handle){var _this=this,curHandle,timer;this.inputs.off('change.zf.slider').on('change.zf.slider',function(e){var idx=_this.inputs.index($(this));_this._handleEvent(e,_this.handles.eq(idx),$(this).val());});if(this.options.clickSelect){this.$element.off('click.zf.slider').on('click.zf.slider',function(e){if(_this.$element.data('dragging')){return false;}if(!$(e.target).is('[data-slider-handle]')){if(_this.options.doubleSided){_this._handleEvent(e);}else{_this._handleEvent(e,_this.$handle);}}});}if(this.options.draggable){this.handles.addTouch();var $body=$('body');$handle.off('mousedown.zf.slider').on('mousedown.zf.slider',function(e){$handle.addClass('is-dragging');_this.$fill.addClass('is-dragging');//
-_this.$element.data('dragging',true);curHandle=$(e.currentTarget);$body.on('mousemove.zf.slider',function(e){e.preventDefault();_this._handleEvent(e,curHandle);}).on('mouseup.zf.slider',function(e){_this._handleEvent(e,curHandle);$handle.removeClass('is-dragging');_this.$fill.removeClass('is-dragging');_this.$element.data('dragging',false);$body.off('mousemove.zf.slider mouseup.zf.slider');});}// prevent events triggered by touch
-).on('selectstart.zf.slider touchmove.zf.slider',function(e){e.preventDefault();});}$handle.off('keydown.zf.slider').on('keydown.zf.slider',function(e){var _$handle=$(this),idx=_this.options.doubleSided?_this.handles.index(_$handle):0,oldValue=parseFloat(_this.inputs.eq(idx).val()),newValue;// handle keyboard event with keyboard util
+_this.$element.data('dragging',true);curHandle=$(e.currentTarget);$body.on('mousemove.zf.slider',function(e){e.preventDefault();_this._handleEvent(e,curHandle);}).on('mouseup.zf.slider',function(e){_this._handleEvent(e,curHandle);$handle.removeClass('is-dragging');_this.$fill.removeClass('is-dragging');_this.$element.data('dragging',false);$body.off('mousemove.zf.slider mouseup.zf.slider');});})// prevent events triggered by touch
+.on('selectstart.zf.slider touchmove.zf.slider',function(e){e.preventDefault();});}$handle.off('keydown.zf.slider').on('keydown.zf.slider',function(e){var _$handle=$(this),idx=_this.options.doubleSided?_this.handles.index(_$handle):0,oldValue=parseFloat(_this.inputs.eq(idx).val()),newValue;// handle keyboard event with keyboard util
 Foundation.Keyboard.handleKey(e,'Slider',{decrease:function decrease(){newValue=oldValue-_this.options.step;},increase:function increase(){newValue=oldValue+_this.options.step;},decrease_fast:function decrease_fast(){newValue=oldValue-_this.options.step*10;},increase_fast:function increase_fast(){newValue=oldValue+_this.options.step*10;},handled:function handled(){// only set handle pos when event was handled specially
 e.preventDefault();_this._setHandlePos(_$handle,newValue,true);}});/*if (newValue) { // if pressed key has special function, update value
         e.preventDefault();
@@ -2308,22 +2235,22 @@ if(!_this.isStuck){_this._removeSticky(scroll>=_this.topPoint?false:true);}});_t
    * @fires Sticky#stuckto
    * @function
    * @private
-   */},{key:'_setSticky',value:function _setSticky(){var _this=this,stickTo=this.options.stickTo,mrgn=stickTo==='top'?'marginTop':'marginBottom',notStuckTo=stickTo==='top'?'bottom':'top',css={};css[mrgn]=this.options[mrgn]+'em';css[stickTo]=0;css[notStuckTo]='auto';this.isStuck=true;this.$element.removeClass('is-anchored is-at-'+notStuckTo).addClass('is-stuck is-at-'+stickTo).css(css/**
+   */},{key:'_setSticky',value:function _setSticky(){var _this=this,stickTo=this.options.stickTo,mrgn=stickTo==='top'?'marginTop':'marginBottom',notStuckTo=stickTo==='top'?'bottom':'top',css={};css[mrgn]=this.options[mrgn]+'em';css[stickTo]=0;css[notStuckTo]='auto';this.isStuck=true;this.$element.removeClass('is-anchored is-at-'+notStuckTo).addClass('is-stuck is-at-'+stickTo).css(css)/**
                   * Fires when the $element has become `position: fixed;`
                   * Namespaced to `top` or `bottom`, e.g. `sticky.zf.stuckto:top`
                   * @event Sticky#stuckto
-                  */).trigger('sticky.zf.stuckto:'+stickTo);this.$element.on("transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd",function(){_this._setSizes();});}/**
+                  */.trigger('sticky.zf.stuckto:'+stickTo);this.$element.on("transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd",function(){_this._setSizes();});}/**
    * Causes the $element to become unstuck.
    * Removes `position: fixed;`, and helper classes.
    * Adds other helper classes.
    * @param {Boolean} isTop - tells the function if the $element should anchor to the top or bottom of its $anchor element.
    * @fires Sticky#unstuckfrom
    * @private
-   */},{key:'_removeSticky',value:function _removeSticky(isTop){var stickTo=this.options.stickTo,stickToTop=stickTo==='top',css={},anchorPt=(this.points?this.points[1]-this.points[0]:this.anchorHeight)-this.elemHeight,mrgn=stickToTop?'marginTop':'marginBottom',notStuckTo=stickToTop?'bottom':'top',topOrBottom=isTop?'top':'bottom';css[mrgn]=0;css['bottom']='auto';if(isTop){css['top']=0;}else{css['top']=anchorPt;}this.isStuck=false;this.$element.removeClass('is-stuck is-at-'+stickTo).addClass('is-anchored is-at-'+topOrBottom).css(css/**
+   */},{key:'_removeSticky',value:function _removeSticky(isTop){var stickTo=this.options.stickTo,stickToTop=stickTo==='top',css={},anchorPt=(this.points?this.points[1]-this.points[0]:this.anchorHeight)-this.elemHeight,mrgn=stickToTop?'marginTop':'marginBottom',notStuckTo=stickToTop?'bottom':'top',topOrBottom=isTop?'top':'bottom';css[mrgn]=0;css['bottom']='auto';if(isTop){css['top']=0;}else{css['top']=anchorPt;}this.isStuck=false;this.$element.removeClass('is-stuck is-at-'+stickTo).addClass('is-anchored is-at-'+topOrBottom).css(css)/**
                   * Fires when the $element has become anchored.
                   * Namespaced to `top` or `bottom`, e.g. `sticky.zf.unstuckfrom:bottom`
                   * @event Sticky#unstuckfrom
-                  */).trigger('sticky.zf.unstuckfrom:'+topOrBottom);}/**
+                  */.trigger('sticky.zf.unstuckfrom:'+topOrBottom);}/**
    * Sets the $element and $container sizes for plugin.
    * Calls `_setBreakPoints`.
    * @param {Function} cb - optional callback function to fire on completion of `_setBreakPoints`.
