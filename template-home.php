@@ -66,12 +66,6 @@ Template Name: Home
 					</a>
 				</section>
 
-
-				<!-- Footer -->
-				<section>
-					Footer area code here...
-				</section>
-
 			</main> <!-- end #main -->
 
 		</div> <!-- end #inner-content -->
