@@ -20,12 +20,15 @@ Template Name: Home
 
 	<div id="content">
 		<!-- Hero section -->
-		<img src="<?php the_field('hero_image'); ?>">
-		<h2><?php the_field('hero_title'); ?></h2>
-		<div class=""><?php the_field('hero_text'); ?></div>
-		<a class="button" href="<?php the_field('hero_button_url'); ?>">
-			<?php the_field('hero_button_description'); ?>
-		</a>
+		<div id="hero" style="background-image: url('<?php the_field('hero_image'); ?>')">
+			<div class="heroCTA">
+				<h2><?php the_field('hero_title'); ?></h2>
+				<p><?php the_field('hero_text'); ?></p>
+				<a class="button" href="<?php the_field('hero_button_url'); ?>">
+					<?php the_field('hero_button_description'); ?>
+				</a>
+			</div>
+		</div>
 
 		<div id="inner-content" class="row">
 
