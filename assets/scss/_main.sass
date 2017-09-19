@@ -595,8 +595,25 @@ ul#menu-main-menu-1
   margin-top: 1em
   .footerTop
     background-color: $lightgray
-    .footerwidgets li
-      list-style: none
+    padding-top: 100px
+    svg
+      margin-bottom: -111px
+    #footerwidgets
+      h3
+        color: #494949
+        font-size: 1.5rem
+        position: relative
+        padding-bottom: 2rem
+        &.after
+          position: absolute
+          content: ""
+          height: 5px
+          width: 35%
+          background-color: $orange
+          bottom: -20px
+          left: 0
+      li
+        list-style: none
   #inner-footer
     background-color: $blue
     color: #C9C9C9

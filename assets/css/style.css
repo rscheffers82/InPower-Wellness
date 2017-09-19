@@ -5871,11 +5871,30 @@ ul#menu-main-menu-1 {
   margin-top: 1em; }
   /* line 596, /Users/Andrew/inpower/assets/scss/_main.sass */
   .footer .footerTop {
-    background-color: #FAF8F5; }
-    /* line 598, /Users/Andrew/inpower/assets/scss/_main.sass */
-    .footer .footerTop .footerwidgets li {
+    background-color: #FAF8F5;
+    padding-top: 100px; }
+    /* line 599, /Users/Andrew/inpower/assets/scss/_main.sass */
+    .footer .footerTop svg {
+      margin-bottom: -111px; }
+    /* line 602, /Users/Andrew/inpower/assets/scss/_main.sass */
+    .footer .footerTop #footerwidgets h3 {
+      color: #494949;
+      font-size: 1.5rem;
+      position: relative;
+      padding-bottom: 2rem; }
+      /* line 607, /Users/Andrew/inpower/assets/scss/_main.sass */
+      .footer .footerTop #footerwidgets h3.after {
+        position: absolute;
+        content: "";
+        height: 5px;
+        width: 35%;
+        background-color: #EF7A23;
+        bottom: -20px;
+        left: 0; }
+    /* line 615, /Users/Andrew/inpower/assets/scss/_main.sass */
+    .footer .footerTop #footerwidgets li {
       list-style: none; }
-  /* line 600, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 617, /Users/Andrew/inpower/assets/scss/_main.sass */
   .footer #inner-footer {
     background-color: #016499;
     color: #C9C9C9;
@@ -5887,7 +5906,7 @@ ul#menu-main-menu-1 {
 /********************* */
 /* PLUGIN STYLES */
 /********************* */
-/* line 614, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 631, /Users/Andrew/inpower/assets/scss/_main.sass */
 .gform_body ul {
   list-style: none outside none;
   margin: 0; }
