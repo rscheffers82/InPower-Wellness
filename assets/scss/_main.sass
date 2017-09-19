@@ -37,14 +37,12 @@ $bodyColor: #747474
   -ms-transition: all $secs ease-in-out
   transition: all $secs ease-in-out
 
-=arrow($color)
-	border: solid transparent
-	height: 0
+=arrow($size, $color)
 	width: 0
-	pointer-events: none
-	border-color: $color
-  border-width: 6px
-	margin-top: -6px
+  height: 0
+  border-top: $size solid transparent
+  border-bottom: $size solid transparent
+  border-left: $size solid $color
 
 /*********************
 /* GENERAL STYLES
@@ -154,7 +152,7 @@ ul#menu-main-menu-1
     .button
       +whitebutton
       .arrow
-        +arrow($orange)
+        +arrow(6px, $orange)
 
   .arc
     position: absolute
@@ -229,7 +227,7 @@ ul#menu-main-menu-1
   .button
     +bluebutton
     .arrow
-      +arrow(#fff)
+      +arrow(6px, #fff)
 
 
 
@@ -595,6 +593,10 @@ ul#menu-main-menu-1
 .footer
   clear: both
   margin-top: 1em
+  .footerTop
+    background-color: $lightgray
+    .footerwidgets li
+      list-style: none
   #inner-footer
     background-color: $blue
     color: #C9C9C9

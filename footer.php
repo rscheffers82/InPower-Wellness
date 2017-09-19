@@ -1,5 +1,18 @@
 				<footer class="footer" role="contentinfo">
 
+					<svg width="1439px" height="105px" viewBox="0 0 1439 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+					    <desc>Created with Sketch.</desc>
+					    <defs></defs>
+					    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+					        <g id="Desktop-HD" transform="translate(-1.000000, -1761.000000)" fill="#FFFFFF">
+					            <g id="Footer" transform="translate(1.000000, 1761.000000)">
+					                <path d="M0,105 C228.266751,35 462.933418,2.15265618e-15 704,0 C945.066582,0 1190.39992,35 1440,105 L0,105 Z" id="Arc" transform="translate(720.000000, 52.500000) rotate(-180.000000) translate(-720.000000, -52.500000) "></path>
+					            </g>
+					        </g>
+					    </g>
+					</svg>
+
 					<!-- For Footer Widgets -->
 					<div class="footerTop">
 							<div id="footerwidgets" class="row">

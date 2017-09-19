@@ -70,8 +70,8 @@ function custom_sidebar_init() {
 	  'class'         => '',
 		'before_widget' => '<li id="%1$s" class="widget large-4 medium-12 columns">',
 		'after_widget'  => '</li>',
-		'before_title'  => '<h2 class="widgettitle">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widgettitle">',
+		'after_title'   => '</h3>',
 	 ) );
 }
 add_action( 'widgets_init', 'custom_sidebar_init' );
