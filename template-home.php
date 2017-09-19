@@ -4,18 +4,6 @@ Template Name: Home
 */
 ?>
 
-<style>
-	section {
-		border: 1px solid #ccc;
-		margin: 2.5rem auto;
-	}
-	.temp {
-		height: 300px;
-		background-color:#F9F8F4;
-		width:80%;
-	}
-</style>
-
 <?php get_header(); ?>
 
 	<div id="content">
@@ -25,7 +13,7 @@ Template Name: Home
 				<h2><?php the_field('hero_title'); ?></h2>
 				<p><?php the_field('hero_text'); ?></p>
 				<a class="button" href="<?php the_field('hero_button_url'); ?>">
-					<?php the_field('hero_button_description'); ?>
+					<?php the_field('hero_button_description'); ?><span class="arrow"></span>
 				</a>
 			</div>
 
@@ -71,7 +59,7 @@ Template Name: Home
 					<h2><?php the_field('call_to_action_title'); ?></h2>
 					<div class=""><?php the_field('call_to_action_description'); ?></div>
 					<a class="button" href="<?php the_field('call_to_action_button_url'); ?>">
-						<?php the_field('call_to_action_button_text'); ?>
+						<?php the_field('call_to_action_button_text'); ?> <span class="arrow"></span>
 					</a>
 				</section>
 

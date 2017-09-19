@@ -60,3 +60,19 @@ function add_custom_query_var( $vars ){
   return $vars;
 }
 add_filter( 'query_vars', 'add_custom_query_var' );
+
+//Registers new SIDEBAR for Footer
+function custom_sidebar_init() {
+	register_sidebar( array(
+		'name'          => __( 'Footer', 'theme_text_domain' ),
+		'id'            => 'footer',
+		'description'   => '',
+	  'class'         => '',
+		'before_widget' => '<li id="%1$s" class="widget large-4 medium-12 columns">',
+		'after_widget'  => '</li>',
+		'before_title'  => '<h2 class="widgettitle">',
+		'after_title'   => '</h2>',
+	 ) );
+}
+add_action( 'widgets_init', 'custom_sidebar_init' );
+

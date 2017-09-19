@@ -37,12 +37,18 @@ $bodyColor: #747474
   -ms-transition: all $secs ease-in-out
   transition: all $secs ease-in-out
 
+=arrow($color)
+	border: solid transparent
+	height: 0
+	width: 0
+	pointer-events: none
+	border-color: $color
+  border-width: 6px
+	margin-top: -6px
 
 /*********************
 /* GENERAL STYLES
 /*********************
-
-
 
 // Sets REM root size to 16px
 html
@@ -147,10 +153,83 @@ ul#menu-main-menu-1
       font-size: 1.2rem
     .button
       +whitebutton
+      .arrow
+        +arrow($orange)
+
   .arc
     position: absolute
     left: 0
     bottom: 0
+
+
+/*********************
+/* TESTIMONIALS
+/*********************
+
+.testimonial
+  h3, h2
+    text-transform: none
+    color: $bodyColor
+  h3
+    font-size: 1.2rem
+    font-weight: 400
+    float: right
+    width: 75%
+    position: relative
+    &:after
+      content: "\0022"
+      position: absolute
+      top: -15px
+      left: -25px
+      font-size: 3rem
+  h2
+    font-size: 1.5rem
+  img
+    float: left
+    width: 180px
+    padding: 10px
+    background-color: #fff
+    border-radius: 90px
+    border: 1px solid #dcdcdc
+    margin-right: 2rem
+    margin-bottom: 1rem
+  .flex-direction-nav a.flex-prev, .flex-direction-nav a.flex-next
+      height: 60px
+      width: 15px
+      text-indent: 1000%
+      background-size: cover
+  .flex-direction-nav a.flex-prev
+    background-image: url('../images/prev-arrow.png')
+  .flex-direction-nav a.flex-next
+    background-image: url('../images/next-arrow.png')
+  .flex-control-paging li a
+    background-color: #D8D8D8
+    box-shadow: none
+  .flex-control-paging li a.flex-active
+    background-color: #B4B0A5
+
+// Over rides for Testimonials plugin
+.tut-flexslider
+  .slides img
+    width: 180px !important
+  .flex-direction-nav a::before
+    display: none
+  .flex-direction-nav a
+    top: 50%
+
+
+//
+//  Homepage CTA @ Bottom
+//
+
+.CTA-home
+  text-align: center
+  div
+    margin-bottom: 2rem
+  .button
+    +bluebutton
+    .arrow
+      +arrow(#fff)
 
 
 
@@ -516,7 +595,7 @@ ul#menu-main-menu-1
 .footer
   clear: both
   margin-top: 1em
-  .inner-footer
+  #inner-footer
     background-color: $blue
     color: #C9C9C9
     padding: 1rem 1rem .35rem
