@@ -48,9 +48,18 @@ Template Name: Home
 		    <main id="main" class="large-12 medium-12 columns" role="main">
 
 
-				<!-- Additional content section -->
-				<section class="temp">
+				<!-- Benefits to Wellness Coaching -->
+				<section class="row benefits">
+						<h2><?php the_field('benefits_title');?></h2>
+						<div class="large-4 medium-6 columns">
+							<p><?php the_field('benefits_content1');?></p>
+						</div>
+						<div class="large-8 medium-6 columns">
+							<p><?php the_field('benefits_content2');?></p>
+						</div>
 				</section>
+
+
 
 				<!-- Testimonial section -->
 				<section class="testimonial">
