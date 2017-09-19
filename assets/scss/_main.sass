@@ -30,6 +30,13 @@ $bodyColor: #747474
   color: $orange
   font-size: 1.5rem
 
+=hollowbutton
+  background-color: transparent
+  border: 2px solid $orange
+  padding: .85rem 1rem
+  color:
+
+
 =cssTransition($secs)
   -webkit-transition: all $secs ease-in-out
   -moz-transition: all $secs ease-in-out
@@ -38,11 +45,12 @@ $bodyColor: #747474
   transition: all $secs ease-in-out
 
 =arrow($size, $color)
-	width: 0
-  height: 0
   border-top: $size solid transparent
   border-bottom: $size solid transparent
   border-left: $size solid $color
+  display: inline-block
+  height: 0
+  width: 0
 
 /*********************
 /* GENERAL STYLES
@@ -593,18 +601,18 @@ ul#menu-main-menu-1
 .footer
   clear: both
   margin-top: 1em
+  svg
+    margin-bottom: -111px
   .footerTop
     background-color: $lightgray
     padding-top: 100px
-    svg
-      margin-bottom: -111px
     #footerwidgets
       h3
         color: #494949
         font-size: 1.5rem
         position: relative
         padding-bottom: 2rem
-        &.after
+        &:after
           position: absolute
           content: ""
           height: 5px
@@ -614,6 +622,8 @@ ul#menu-main-menu-1
           left: 0
       li
         list-style: none
+      a.button
+        +hollowbutton
   #inner-footer
     background-color: $blue
     color: #C9C9C9
