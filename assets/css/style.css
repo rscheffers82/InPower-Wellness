@@ -5893,7 +5893,26 @@ to display none.
     display: none; } }
 
 /********************* */
+/* TESTIMONIALS */
+/********************* */
+/* line 11, /Users/Andrew/inpower/assets/scss/_andrew.sass */
+.testimonials img {
+  float: left;
+  width: 180px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 90px;
+  border: 1px solid #dcdcdc;
+  margin-right: 2rem;
+  margin-bottom: 1rem; }
+
+/********************* */
 /* FOOTER STYLES */
 /********************* */
+/* line 26, /Users/Andrew/inpower/assets/scss/_andrew.sass */
+#inner-footer {
+  background-color: #016499;
+  color: #C9C9C9;
+  padding: 1rem 1rem .35rem; }
 
 /*# sourceMappingURL=../css/style.map */
