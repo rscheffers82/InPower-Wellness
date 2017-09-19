@@ -13,7 +13,7 @@ Template Name: Home
 				<h2><?php the_field('hero_title'); ?></h2>
 				<p><?php the_field('hero_text'); ?></p>
 				<a class="button" href="<?php the_field('hero_button_url'); ?>">
-					<?php the_field('hero_button_description'); ?><span class="arrow"></span>
+					<?php the_field('hero_button_description'); ?> <span class="arrow"></span>
 				</a>
 			</div>
 

@@ -24,17 +24,28 @@ $bodyColor: #747474
   background: rgba(1,100,153,0.79)
   font-size: 1.5rem
   color: #FFFFFF
+  &:hover
+    background: transparent
+    border: 2px solid $blue
+    color: $blue
 
 =whitebutton
   background: rgba(255,255,255,0.98)
   color: $orange
   font-size: 1.5rem
+  &:hover
+    background: transparent
+    border: 2px solid #fff
+    color: #fff
 
 =hollowbutton
   background-color: transparent
   border: 2px solid $orange
   padding: .85rem 1rem
-  color:
+  color: #494949
+  &:hover
+    background-color: $orange
+    color: #fff
 
 
 =cssTransition($secs)
@@ -160,7 +171,7 @@ ul#menu-main-menu-1
     .button
       +whitebutton
       .arrow
-        +arrow(6px, $orange)
+        +arrow(8px, $orange)
 
   .arc
     position: absolute
@@ -235,7 +246,7 @@ ul#menu-main-menu-1
   .button
     +bluebutton
     .arrow
-      +arrow(6px, #fff)
+      +arrow(8px, #fff)
 
 
 
@@ -605,7 +616,9 @@ ul#menu-main-menu-1
     margin-bottom: -111px
   .footerTop
     background-color: $lightgray
-    padding-top: 100px
+    padding: 150px 0 50px
+    background-image: url('../images/sun-footer.png')
+    background-position: bottom center
     #footerwidgets
       h3
         color: #494949
