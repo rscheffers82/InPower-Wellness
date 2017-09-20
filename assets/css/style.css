@@ -6047,6 +6047,14 @@ to display none.
   nav {
     display: none; } }
 
+/* line 4, /Users/Andrew/inpower/assets/scss/_andrew.sass */
+ul.check {
+  list-style: none; }
+  /* line 6, /Users/Andrew/inpower/assets/scss/_andrew.sass */
+  ul.check li {
+    padding-left: 20px;
+    background: url("../images/check.png"); }
+
 /********************* */
 /* FOOTER STYLES */
 /********************* */
