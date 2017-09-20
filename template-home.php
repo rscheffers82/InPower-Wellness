@@ -38,15 +38,13 @@ Template Name: Home
 
 				<!-- Benefits to Wellness Coaching -->
 				<section class="row benefits">
-						<h2><?php the_field('benefits_title');?></h2>
-						<div class="large-4 medium-12 columns">
+						<div class="large-8 medium-6 columns">
+							<h2><?php the_field('benefits_title');?></h2>
 							<p><?php the_field('benefits_content1');?></p>
 						</div>
 						<div class="large-4 medium-6 columns">
+							<h4><?php the_field('benefits_title2');?></h4>
 							<p><?php the_field('benefits_content2');?></p>
-						</div>
-						<div class="large-4 medium-6 columns">
-							<p><?php the_field('benefits_content3');?></p>
 						</div>
 				</section>
 
