@@ -44,7 +44,7 @@ $bodyColor: #747474
   padding: .85rem 1rem
   color: #494949
   &:hover
-    background-color: $orange
+    background-color: rgba(239, 122, 35, 0.41)
     color: #fff
 
 
@@ -184,7 +184,7 @@ ul#menu-main-menu-1
 /*********************
 
 .testimonial
-  margin: 2rem 0 2rem
+  margin: 2rem 0 6rem
   h3, h2
     text-transform: none
     color: $bodyColor
@@ -194,6 +194,7 @@ ul#menu-main-menu-1
     float: right
     width: 75%
     position: relative
+    margin-bottom: 1.5rem
     &:after
       content: "\0022"
       position: absolute
@@ -228,8 +229,10 @@ ul#menu-main-menu-1
 
 // Over rides for Testimonials plugin
 .tut-flexslider
-  .slides img
-    width: 180px !important
+  .slides
+    padding: 3rem 3rem 2rem 
+    img
+      width: 180px !important
   .flex-direction-nav a::before
     display: none
   .flex-direction-nav a
@@ -613,6 +616,10 @@ ul#menu-main-menu-1
 .footer
   clear: both
   margin-top: 1em
+  a
+    color: #C9C9C9
+  .copyRight
+    float: right
   svg
     margin-bottom: -111px
   .footerTop
