@@ -84,6 +84,12 @@ a, a:visited
     //Highlight links on iOS, Similar to :hover for mobile devices.
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3)
 
+// Default Button
+.button
+  +bluebutton
+  .arrow
+    +arrow(8px, #fff)
+
 /*********************
 /* H1, H2, H3, H4, H5 P STYLES
 /*********************
@@ -142,9 +148,10 @@ ul#menu-main-menu-1
       white-space: nowrap
 
 ul.submenu
+  border: 0
   li:hover
     background-color: $lightgray
-    border-left: 5px solid $orange 
+    border-left: 8px solid $orange
 
 
 // Drop down arrows
@@ -289,6 +296,23 @@ ul.submenu
 #content
   #inner-content
     padding: 1rem 0rem 0rem
+
+h1.page-title
+  display: inline-block
+  margin-bottom: 2.5rem
+  position: relative
+  font-size: 2.25rem
+  &:after
+    position: absolute
+    content: ""
+    height: 8px
+    width: 33%
+    background-color: $orange
+    bottom: -19px
+    left: 0
+
+.entry-content
+  padding: 2.5rem
 
 .single-title,
 .page-title
