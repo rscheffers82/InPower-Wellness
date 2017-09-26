@@ -27,7 +27,7 @@ $bodyColor: #747474
   border: 2px solid $blue
   &:hover
     background: transparent
-    border: 2px solid $blue
+    border: 2px solid rgba(1,100,153,0.79)
     color: $blue
 
 =whitebutton
@@ -155,10 +155,10 @@ ul#menu-main-menu-1
 ul.submenu
   border: 0
   li
-    +cssTransition(.5)
-  &:hover
-    background-color: $lightgray
-    border-left: 8px solid $orange
+    +cssTransition(.2)
+    &:hover
+      background-color: $lightgray
+      border-left: 8px solid $orange
 
 ul li.is-dropdown-submenu-parent
   .is-dropdown-submenu
@@ -219,7 +219,8 @@ ul li.is-dropdown-submenu-parent
       +whitebutton
       .arrow
         +arrow(8px, $orange)
-        &:hover
+      &:hover
+        .arrow
           +arrow (8px, #fff)
 
 .arc
@@ -311,7 +312,8 @@ ul li.is-dropdown-submenu-parent
     +bluebutton
     .arrow
       +arrow(8px, #fff)
-      &:hover
+    &:hover
+      .arrow
         +arrow(8px, $blue)
 
 
