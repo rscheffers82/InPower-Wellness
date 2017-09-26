@@ -703,8 +703,11 @@ h1.page-title
 .footer
   clear: both
   margin-top: 0
+  color: #494949
   a
-    color: #C9C9C9
+    color: #494949
+    &:hover
+      color: #c9c9c9
   .copyRight
     float: right
   svg
@@ -730,11 +733,27 @@ h1.page-title
           background-color: $orange
           bottom: -15px
           left: 0
+      h3.sbi_no_bio::after
+        // no uderline for instagram title
+        display: none
       li
         list-style: none
       a.button
         +hollowbutton
         font-size: 1rem
+      a.linkedin
+        img
+          width: 30px
+          margin-right: .5rem
+      #sb_instagram
+        margin-top: -20px
+        .sbi_load_btn
+          display: none !important 
+        .sbi_follow_btn
+          float: right
+          margin-right: 10px
+
+
   #inner-footer
     background-color: $blue
     color: #C9C9C9
