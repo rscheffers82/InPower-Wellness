@@ -24,6 +24,7 @@ $bodyColor: #747474
   background: rgba(1,100,153,0.79)
   font-size: 1.5rem
   color: #FFFFFF
+  border: 2px solid $blue
   &:hover
     background: transparent
     border: 2px solid $blue
@@ -33,6 +34,7 @@ $bodyColor: #747474
   background: rgba(255,255,255,0.98)
   color: $orange
   font-size: 1.5rem
+  border: 2px solid #fff
   &:hover
     background: transparent
     border: 2px solid #fff
@@ -54,9 +56,6 @@ $bodyColor: #747474
   -o-transition: all $secs ease-in-out
   -ms-transition: all $secs ease-in-out
   transition: all $secs ease-in-out
-
-*
-  +cssTransition(.5)
 
 =arrow($size, $color)
   border-top: $size solid transparent
@@ -155,10 +154,28 @@ ul#menu-main-menu-1
 
 ul.submenu
   border: 0
-  li:hover
+  li
+    +cssTransition(.5)
+  &:hover
     background-color: $lightgray
     border-left: 8px solid $orange
 
+ul li.is-dropdown-submenu-parent
+  .is-dropdown-submenu
+    display: block
+    visibility: hidden
+    opacity: 0
+     /* For Safari 3.1 to 6.0 */
+    -webkit-transition-property: width
+    -webkit-transition-duration: 0.4s
+    -webkit-transition-timing-function: ease
+    -webkit-transition-delay: 0.4s
+    /* Standard syntax */
+    transition-duration: 0.4s
+    transition-timing-function: ease
+  &:hover > .is-dropdown-submenu
+    visibility: visible
+    opacity: 1
 
 // Drop down arrows
 .dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a::after
@@ -202,6 +219,8 @@ ul.submenu
       +whitebutton
       .arrow
         +arrow(8px, $orange)
+        &:hover
+          +arrow (8px, #fff)
 
 .arc
   position: absolute
@@ -292,6 +311,9 @@ ul.submenu
     +bluebutton
     .arrow
       +arrow(8px, #fff)
+      &:hover
+        +arrow(8px, $blue)
+
 
 
 
@@ -751,6 +773,7 @@ h1.page-title
         img
           width: 30px
           margin-right: .5rem
+          +cssTransition(.5)
           &:hover
             opacity: .7
             +cssTransition(.5)
