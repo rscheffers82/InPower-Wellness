@@ -24,7 +24,7 @@ $bodyColor: #747474
   background: rgba(1,100,153,0.79)
   font-size: 1.5rem
   color: #FFFFFF
-  border: 2px solid $blue
+  border: 2px solid rgba(1,100,153,0.79)
   &:hover
     background: transparent
     border: 2px solid rgba(1,100,153,0.79)
@@ -155,7 +155,7 @@ ul#menu-main-menu-1
 ul.submenu
   border: 0
   li
-    +cssTransition(.2)
+    +cssTransition(.2s)
     &:hover
       background-color: $lightgray
       border-left: 8px solid $orange
@@ -165,14 +165,7 @@ ul li.is-dropdown-submenu-parent
     display: block
     visibility: hidden
     opacity: 0
-     /* For Safari 3.1 to 6.0 */
-    -webkit-transition-property: width
-    -webkit-transition-duration: 0.4s
-    -webkit-transition-timing-function: ease
-    -webkit-transition-delay: 0.4s
-    /* Standard syntax */
-    transition-duration: 0.4s
-    transition-timing-function: ease
+     +cssTransition(.2s)
   &:hover > .is-dropdown-submenu
     visibility: visible
     opacity: 1
@@ -775,10 +768,10 @@ h1.page-title
         img
           width: 30px
           margin-right: .5rem
-          +cssTransition(.5)
+          +cssTransition(.3s)
           &:hover
             opacity: .7
-            +cssTransition(.5)
+            +cssTransition(.3s)
       #sb_instagram
         margin-top: -20px
         .sbi_load_btn
