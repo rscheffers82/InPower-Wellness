@@ -55,6 +55,9 @@ $bodyColor: #747474
   -ms-transition: all $secs ease-in-out
   transition: all $secs ease-in-out
 
+*
+  +cssTransition(.5)
+
 =arrow($size, $color)
   border-top: $size solid transparent
   border-bottom: $size solid transparent
@@ -714,9 +717,9 @@ h1.page-title
     margin-bottom: -111px
   .footerTop
     background-color: $lightgray
-    padding: 150px 0 50px
+    padding: 150px 0 20px
     background-image: url('../images/sun-footer.png')
-    background-position: 50% 363px
+    background-position: 50% 410px
     background-repeat: no-repeat
     background-size: 292px
     #footerwidgets
@@ -733,9 +736,12 @@ h1.page-title
           background-color: $orange
           bottom: -15px
           left: 0
-      h3.sbi_no_bio::after
+      #sb_instagram .sb_instagram_header h3.sbi_no_bio
+        font-weight: 300
+        padding-top: 3px !important
         // no uderline for instagram title
-        display: none
+        &::after
+          display: none
       li
         list-style: none
       a.button
@@ -745,10 +751,13 @@ h1.page-title
         img
           width: 30px
           margin-right: .5rem
+          &:hover
+            opacity: .7
+            +cssTransition(.5)
       #sb_instagram
         margin-top: -20px
         .sbi_load_btn
-          display: none !important 
+          display: none !important
         .sbi_follow_btn
           float: right
           margin-right: 10px
@@ -758,6 +767,8 @@ h1.page-title
     background-color: $blue
     color: #C9C9C9
     padding: 1rem 1rem .35rem
+    a
+      color: #C9C9C9
 
 
 /*********************
