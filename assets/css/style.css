@@ -2593,7 +2593,7 @@ textarea {
   font-family: inherit;
   font-size: 1rem;
   font-weight: normal;
-  color: #0a0a0a;
+  color: #B5B0A4;
   transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
   appearance: none; }
   /* line 102, /Users/Andrew/inpower/vendor/foundation-sites/scss/forms/_text.scss */
@@ -2782,7 +2782,7 @@ select {
   font-family: inherit;
   font-size: 1rem;
   line-height: normal;
-  color: #0a0a0a;
+  color: #B5B0A4;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%28138, 138, 138%29'></polygon></svg>");
   background-origin: content-box;
   background-position: right -1rem center;
@@ -6198,7 +6198,14 @@ h1.page-title {
   border: 2px solid rgba(1, 100, 153, 0.79);
   -webkit-background-clip: padding-box;
   /* for Safari */
-  background-clip: padding-box; }
+  background-clip: padding-box;
+  padding: .65rem 1rem;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
   /* line 32, /Users/Andrew/inpower/assets/scss/_main.sass */
   .wpcf7-submit:hover {
     background: transparent;
@@ -6210,11 +6217,11 @@ h1.page-title {
     color: #016499; }
 
 /*Styles used for radio buttons*/
-/* line 840, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 843, /Users/Andrew/inpower/assets/scss/_main.sass */
 span.wpcf7-list-item {
   margin: 0; }
 
-/* line 843, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 846, /Users/Andrew/inpower/assets/scss/_main.sass */
 .wpcf7-list-item input {
   position: absolute !important;
   clip: rect(0, 0, 0, 0);
@@ -6223,7 +6230,7 @@ span.wpcf7-list-item {
   border: 0;
   overflow: hidden; }
 
-/* line 851, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 854, /Users/Andrew/inpower/assets/scss/_main.sass */
 .wpcf7-list-item label span {
   display: inline-block;
   float: left;
@@ -6244,17 +6251,17 @@ span.wpcf7-list-item {
   -ms-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out; }
 
-/* line 867, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 870, /Users/Andrew/inpower/assets/scss/_main.sass */
 .wpcf7-list-item label:hover {
   cursor: pointer; }
 
-/* line 870, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 873, /Users/Andrew/inpower/assets/scss/_main.sass */
 .wpcf7-list-item input:checked + span {
   background-color: #D8D8D8;
   color: #7d7d7d;
   box-shadow: none; }
 
-/* line 875, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 878, /Users/Andrew/inpower/assets/scss/_main.sass */
 .wpcf7-list-item label span {
   background-color: transparent;
   box-shadow: none;
@@ -6263,13 +6270,13 @@ span.wpcf7-list-item {
 /********************* */
 /* LEAD GEN PAGE */
 /********************* */
-/* line 886, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 889, /Users/Andrew/inpower/assets/scss/_main.sass */
 body.page-id-63 .entry-content {
   background-color: #F9F8F4;
   padding: 2.5rem; }
 
-/* line 890, /Users/Andrew/inpower/assets/scss/_main.sass */
-body.page-id-63 #main #main {
+/* line 892, /Users/Andrew/inpower/assets/scss/_main.sass */
+body.page-id-63 #main {
   position: relative;
   margin-top: -250px; }
 
