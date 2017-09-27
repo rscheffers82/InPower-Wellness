@@ -1,6 +1,6 @@
 				<footer class="footer" role="contentinfo">
 
-					<svg class="footerArc" width="1439px" height="105px" viewBox="0 0 1439 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<svg class="footerArc" viewBox="0 0 1439 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 					    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
 					    <desc>Created with Sketch.</desc>
 					    <defs></defs>
@@ -13,15 +13,20 @@
 					    </g>
 					</svg>
 
-					<!-- For Footer Widgets -->
-					<div class="footerTop">
-							<div id="footerwidgets" class="row">
-								<?php
-									if ( is_active_sidebar( 'footer' ) ) :
-										dynamic_sidebar( 'footer' );
-									endif; ?>
-							</div>
-					</div><!-- end .footerTop -->
+					<?php if (! is_page('corporate-intake')) {
+						?>
+							<!-- For Footer Widgets -->
+							<div class="footerTop">
+									<div id="footerwidgets" class="row">
+										<?php
+											if ( is_active_sidebar( 'footer' ) ) :
+												dynamic_sidebar( 'footer' );
+											endif; ?>
+									</div>
+							</div><!-- end .footerTop -->
+						<?php
+						}
+						?>
 
 					<div id="inner-footer">
 						<div class="row">
