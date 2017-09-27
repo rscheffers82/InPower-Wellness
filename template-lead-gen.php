@@ -6,11 +6,6 @@ Template Name: Lead Generation
 
 <?php get_header(); ?>
 
-<style>
-	.entry-content {background-color: #F9F8F4;}
-	#main {position:relative; top:-250px;}
-</style>
-
 	<div id="content">
 		<div class="header-image" style="background-image: url('<?php the_post_thumbnail_url('full'); ?>')">
 			<svg class="arc" viewBox="0 0 1440 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

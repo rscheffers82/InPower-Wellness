@@ -2587,7 +2587,7 @@ textarea {
   margin: 0 0 1rem;
   padding: 0.5rem;
   border: 1px solid #cacaca;
-  border-radius: 8px;
+  border-radius: 0;
   background-color: #fefefe;
   box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
   font-family: inherit;
@@ -2666,10 +2666,10 @@ label > [type='radio'] {
 label {
   display: block;
   margin: 0;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: normal;
   line-height: 1.8;
-  color: #0a0a0a; }
+  color: #9E9892; }
   /* line 46, /Users/Andrew/inpower/vendor/foundation-sites/scss/forms/_label.scss */
   label.middle {
     margin: 0 0 1rem;
@@ -2689,10 +2689,10 @@ label {
   margin-bottom: 1rem; }
   /* line 36, /Users/Andrew/inpower/vendor/foundation-sites/scss/forms/_input-group.scss */
   .input-group > :first-child {
-    border-radius: 8px 0 0 8px; }
+    border-radius: 0 0 0 0; }
   /* line 41, /Users/Andrew/inpower/vendor/foundation-sites/scss/forms/_input-group.scss */
   .input-group > :last-child > * {
-    border-radius: 0 8px 8px 0; }
+    border-radius: 0 0 0 0; }
 
 /* line 47, /Users/Andrew/inpower/vendor/foundation-sites/scss/forms/_input-group.scss */
 .input-group-label, .input-group-field, .input-group-button, .input-group-button a,
@@ -2706,7 +2706,7 @@ label {
 
 /* line 57, /Users/Andrew/inpower/vendor/foundation-sites/scss/forms/_input-group.scss */
 .input-group-label {
-  padding: 0 1rem;
+  padding: 0 1.1rem;
   border: 1px solid #cacaca;
   background: #e6e6e6;
   color: #0a0a0a;
@@ -2777,7 +2777,7 @@ select {
   padding: 0.5rem;
   appearance: none;
   border: 1px solid #cacaca;
-  border-radius: 8px;
+  border-radius: 0;
   background-color: #fefefe;
   font-family: inherit;
   font-size: 1rem;
@@ -6189,12 +6189,32 @@ h1.page-title {
 /********************* */
 /* CONTACT FORM 7 STYLES */
 /********************* */
+/* line 835, /Users/Andrew/inpower/assets/scss/_main.sass */
+.wpcf7-submit {
+  background: rgba(1, 100, 153, 0.79);
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  border: 2px solid #016499;
+  border: 2px solid rgba(1, 100, 153, 0.79);
+  -webkit-background-clip: padding-box;
+  /* for Safari */
+  background-clip: padding-box; }
+  /* line 32, /Users/Andrew/inpower/assets/scss/_main.sass */
+  .wpcf7-submit:hover {
+    background: transparent;
+    border: 2px solid #016499;
+    border: 2px solid rgba(1, 100, 153, 0.79);
+    -webkit-background-clip: padding-box;
+    /* for Safari */
+    background-clip: padding-box;
+    color: #016499; }
+
 /*Styles used for radio buttons*/
-/* line 836, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 840, /Users/Andrew/inpower/assets/scss/_main.sass */
 span.wpcf7-list-item {
   margin: 0; }
 
-/* line 839, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 843, /Users/Andrew/inpower/assets/scss/_main.sass */
 .wpcf7-list-item input {
   position: absolute !important;
   clip: rect(0, 0, 0, 0);
@@ -6203,7 +6223,7 @@ span.wpcf7-list-item {
   border: 0;
   overflow: hidden; }
 
-/* line 847, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 851, /Users/Andrew/inpower/assets/scss/_main.sass */
 .wpcf7-list-item label span {
   display: inline-block;
   float: left;
@@ -6224,16 +6244,34 @@ span.wpcf7-list-item {
   -ms-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out; }
 
-/* line 863, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 867, /Users/Andrew/inpower/assets/scss/_main.sass */
 .wpcf7-list-item label:hover {
   cursor: pointer; }
 
-/* line 866, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 870, /Users/Andrew/inpower/assets/scss/_main.sass */
 .wpcf7-list-item input:checked + span {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #e4e4e4;
-    color--webkit-box-shadow: none;
-    color-box-shadow: none; }
+  background-color: #D8D8D8;
+  color: #7d7d7d;
+  box-shadow: none; }
+
+/* line 875, /Users/Andrew/inpower/assets/scss/_main.sass */
+.wpcf7-list-item label span {
+  background-color: transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none; }
+
+/********************* */
+/* LEAD GEN PAGE */
+/********************* */
+/* line 886, /Users/Andrew/inpower/assets/scss/_main.sass */
+body.page-id-63 .entry-content {
+  background-color: #F9F8F4;
+  padding: 2.5rem; }
+
+/* line 890, /Users/Andrew/inpower/assets/scss/_main.sass */
+body.page-id-63 #main #main {
+  position: relative;
+  margin-top: -250px; }
 
 /******************************************************************
 
