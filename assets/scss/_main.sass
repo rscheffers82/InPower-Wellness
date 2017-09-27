@@ -125,6 +125,9 @@ h4, .h4
 
 h5, .h5
 
+p
+  line-height: 1.5rem
+
 ul.check
   list-style: none
   margin-left: 0
@@ -144,8 +147,8 @@ blockquote
   &:after
     content: "\0022"
     position: absolute
-    top: -15px
-    left: -25px
+    top: -6px
+    left: -4px
     font-size: 3rem
 
 
@@ -217,7 +220,7 @@ ul li.is-dropdown-submenu-parent
   height: 550px
   position: relative
   .heroCTA
-    width: 450px
+    width: 470px
     float: right
     margin: 5rem 200px 0 0
     color: #fff
@@ -368,7 +371,7 @@ h1.page-title
     left: 0
 
 .entry-content
-  padding: 2.5rem
+  padding: 2.5rem 2.5rem 0
   background-color: #fff
   z-index: 100
   position: relative
@@ -823,3 +826,46 @@ h1.page-title
 .gform_body ul
   list-style: none outside none
   margin: 0
+
+
+/*********************
+/* CONTACT FORM 7 STYLES
+/*********************
+
+/*Styles used for radio buttons*/
+span.wpcf7-list-item
+  margin: 0
+
+.wpcf7-list-item input
+	position: absolute !important
+	clip: rect(0, 0, 0, 0)
+	height: 1px
+	width: 1px
+	border: 0
+	overflow: hidden
+
+.wpcf7-list-item label span
+  display: inline-block
+  float: left
+  width: 180px
+  background-color: #e4e4e4
+  color: rgba(0, 0, 0, 0.6)
+  font-size: 14px
+  font-weight: normal
+  text-align: center
+  text-shadow: none
+  padding: 6px 14px
+  border: 1px solid rgba(0, 0, 0, 0.2)
+  /*-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1)
+  +cssTransition(.1s)
+
+.wpcf7-list-item label:hover
+	cursor: pointer
+
+.wpcf7-list-item input:checked + span
+	background-color: rgba(0, 0, 0, 0.6)
+	color: #e4e4e4
+  -webkit-box-shadow: none
+  box-shadow: none
+
