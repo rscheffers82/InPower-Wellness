@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: Narrow Width (No Sidebar)
+*/
+
+get_header(); ?>
 
 	<div id="content">
 		<div class="header-image" style="background-image: url('<?php the_post_thumbnail_url('full'); ?>')">
