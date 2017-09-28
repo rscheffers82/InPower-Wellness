@@ -6293,35 +6293,33 @@ body.page-id-63 #main {
 /* line 905, /Users/Andrew/inpower/assets/scss/_main.sass */
 body.page-id-63 #leadGenHeader {
   width: 48%;
-  left: 15%;
-  position: absolute;
-  top: 10%;
+  position: relative;
   color: #fff;
   margin: 2.5rem auto;
   text-shadow: 1px 1px 3px rgba(23, 23, 23, 0.31); }
-  /* line 913, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 911, /Users/Andrew/inpower/assets/scss/_main.sass */
   body.page-id-63 #leadGenHeader h1 {
     color: #fff;
     font-weight: 700;
     margin-bottom: 2rem;
     line-height: 2.8rem; }
-  /* line 918, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 916, /Users/Andrew/inpower/assets/scss/_main.sass */
   body.page-id-63 #leadGenHeader p {
     font-size: 1.35rem;
     width: 70%; }
 
-/* line 921, /Users/Andrew/inpower/assets/scss/_main.sass */
-body.page-id-63 .header.article-header {
+/* line 919, /Users/Andrew/inpower/assets/scss/_main.sass */
+body.page-id-63 header.article-header {
   display: none; }
 
-/* line 923, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 921, /Users/Andrew/inpower/assets/scss/_main.sass */
 body.page-id-63 .footer {
   padding-top: 14rem;
   background-image: url("../images/sun-footer.png");
   background-position: 50% 78px;
   background-repeat: no-repeat;
   background-size: 292px; }
-  /* line 929, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 927, /Users/Andrew/inpower/assets/scss/_main.sass */
   body.page-id-63 .footer .footerArc {
     display: none; }
 
