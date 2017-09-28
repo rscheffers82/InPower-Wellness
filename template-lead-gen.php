@@ -8,6 +8,10 @@ Template Name: Lead Generation
 
 	<div id="content">
 		<div class="header-image" style="background-image: url('<?php the_post_thumbnail_url('full'); ?>')">
+			<div id="leadGenHeader">
+				<h1><?php the_field('lead-gen-header');?></h1>
+				<p><?php the_field('lead-in-phrase');?></p>
+			</div>
 			<svg class="arc" viewBox="0 0 1440 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
 			    <desc>Created with Sketch.</desc>

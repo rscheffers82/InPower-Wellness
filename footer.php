@@ -13,7 +13,10 @@
 					    </g>
 					</svg>
 
-					<?php if !(is_page('corporate-intake')) {
+					<?php if (is_page('corporate-intake')) {
+
+					}
+					else {
 						?>
 							<!-- For Footer Widgets -->
 							<div class="footerTop">
