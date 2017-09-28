@@ -6280,6 +6280,13 @@ body.page-id-63 #main {
   position: relative;
   margin-top: -250px; }
 
+/* line 895, /Users/Andrew/inpower/assets/scss/_main.sass */
+body.page-id-63 #leadGenHeader {
+  width: 70%;
+  left: 15%;
+  position: absolute;
+  top: 10%; }
+
 /******************************************************************
 
 Stylesheet: Retina Screens & Devices Stylesheet
