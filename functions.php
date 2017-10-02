@@ -61,6 +61,13 @@ function add_custom_query_var( $vars ){
 }
 add_filter( 'query_vars', 'add_custom_query_var' );
 
+
+//Add Custom image size for BLog Thumbnail
+add_action( 'after_setup_theme', 'add_image_size' );
+function add_image_size() {
+    add_image_size( 'blog-thumb', 190, 168, true );
+}
+
 //Registers new SIDEBAR for Footer
 function custom_sidebar_init() {
 	register_sidebar( array(

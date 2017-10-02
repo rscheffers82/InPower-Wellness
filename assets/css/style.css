@@ -6327,6 +6327,13 @@ body.page-id-63 .footer {
   body.page-id-63 .footer .footerArc {
     display: none; }
 
+/********************* */
+/* BLOG PAGE STYLES */
+/********************* */
+/* line 937, /Users/Andrew/inpower/assets/scss/_main.sass */
+body.blog main#main {
+  margin-top: -225px; }
+
 /******************************************************************
 
 Stylesheet: Retina Screens & Devices Stylesheet
