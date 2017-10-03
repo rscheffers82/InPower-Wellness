@@ -68,6 +68,19 @@ function add_blog_thumbs() {
     add_image_size( 'blog-thumb', 190, 168, true );
 }
 
+// Customize Excerpt Length
+function custom_excerpt_length( $length ) {
+	return 20; //20 chars
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+//// Customizing the_excerpt's "Read more" text by a link
+function new_excerpt_more($more) {
+       global $post;
+	return '<a class="button more-link" href="'. get_permalink($post->ID) . '">Continue Reading</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
 //Registers new SIDEBAR for Footer
 function custom_sidebar_init() {
 	register_sidebar( array(

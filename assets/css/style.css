@@ -6334,6 +6334,20 @@ body.page-id-63 .footer {
 body.blog main#main {
   margin-top: -225px;
   position: relative; }
+  /* line 940, /Users/Andrew/inpower/assets/scss/_main.sass */
+  body.blog main#main article {
+    padding: 1rem 3rem;
+    background: #fff; }
+    /* line 943, /Users/Andrew/inpower/assets/scss/_main.sass */
+    body.blog main#main article:first-child {
+      padding-top: 3rem; }
+    /* line 945, /Users/Andrew/inpower/assets/scss/_main.sass */
+    body.blog main#main article h2 {
+      font-size: 1.5rem;
+      color: #7d7d7d; }
+    /* line 948, /Users/Andrew/inpower/assets/scss/_main.sass */
+    body.blog main#main article .entry-content {
+      padding: 0; }
 
 /******************************************************************
 
