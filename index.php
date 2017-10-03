@@ -18,9 +18,9 @@
 
 		<div id="inner-content" class="row">
 
-				<h1 class="page-title">Articles / Blog </h1>s
-
 		    <main id="main" class="large-8 large-offset-2 medium-8 medium-offset-2 columns" role="main">
+					
+					<h1 class="page-title">Articles / Blog </h1>
 
 			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
