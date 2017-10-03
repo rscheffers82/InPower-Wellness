@@ -6332,7 +6332,8 @@ body.page-id-63 .footer {
 /********************* */
 /* line 937, /Users/Andrew/inpower/assets/scss/_main.sass */
 body.blog main#main {
-  margin-top: -225px; }
+  margin-top: -225px;
+  position: relative; }
 
 /******************************************************************
 
