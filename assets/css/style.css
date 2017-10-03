@@ -6037,70 +6037,74 @@ h1.page-title {
       width: 97.3%;
       height: 150px; }
 
-/* line 690, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 687, /Users/Andrew/inpower/assets/scss/_main.sass */
+#submit {
+  font-size: 1rem; }
+
+/* line 691, /Users/Andrew/inpower/assets/scss/_main.sass */
 #comment-form-title {
   margin: 0 0 1.1em; }
 
-/* line 701, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 702, /Users/Andrew/inpower/assets/scss/_main.sass */
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0; }
 
-/* line 705, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 706, /Users/Andrew/inpower/assets/scss/_main.sass */
 .nocomments {
   margin: 0 20px 1.1em; }
 
 /********************* */
 /* SIDEBARS & ASIDES */
 /********************* */
-/* line 712, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 713, /Users/Andrew/inpower/assets/scss/_main.sass */
 .sidebar .testimonial {
   margin: 0 2rem; }
-  /* line 714, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 715, /Users/Andrew/inpower/assets/scss/_main.sass */
   .sidebar .testimonial img {
     display: block;
     margin: 0 auto;
     float: none; }
-  /* line 718, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 719, /Users/Andrew/inpower/assets/scss/_main.sass */
   .sidebar .testimonial h3 {
     font-size: 1.25rem;
     float: none;
     margin: 0 auto 0 3rem;
     width: 85%; }
-  /* line 723, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 724, /Users/Andrew/inpower/assets/scss/_main.sass */
   .sidebar .testimonial h2 {
     width: 70%;
     float: right;
     margin-top: 1rem;
     font-size: 1.25rem; }
 
-/* line 734, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 735, /Users/Andrew/inpower/assets/scss/_main.sass */
 .widget ul {
   margin: 0; }
-  /* line 737, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 738, /Users/Andrew/inpower/assets/scss/_main.sass */
   .widget ul li {
     list-style: none; }
 
 /********************* */
 /* FOOTER STYLES */
 /********************* */
-/* line 752, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 753, /Users/Andrew/inpower/assets/scss/_main.sass */
 .footer {
   clear: both;
   margin-top: 0;
   color: #494949; }
-  /* line 756, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 757, /Users/Andrew/inpower/assets/scss/_main.sass */
   .footer a {
     color: #494949; }
-    /* line 758, /Users/Andrew/inpower/assets/scss/_main.sass */
+    /* line 759, /Users/Andrew/inpower/assets/scss/_main.sass */
     .footer a:hover {
       color: #c9c9c9; }
-  /* line 760, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 761, /Users/Andrew/inpower/assets/scss/_main.sass */
   .footer .copyRight {
     float: right; }
-  /* line 762, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 763, /Users/Andrew/inpower/assets/scss/_main.sass */
   .footer svg {
     margin-bottom: -109px; }
-  /* line 764, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 765, /Users/Andrew/inpower/assets/scss/_main.sass */
   .footer .footerTop {
     background-color: #FAF8F5;
     padding: 150px 0 20px;
@@ -6108,13 +6112,13 @@ h1.page-title {
     background-position: 50% 410px;
     background-repeat: no-repeat;
     background-size: 292px; }
-    /* line 772, /Users/Andrew/inpower/assets/scss/_main.sass */
+    /* line 773, /Users/Andrew/inpower/assets/scss/_main.sass */
     .footer .footerTop #footerwidgets h3 {
       color: #494949;
       font-size: 1.5rem;
       position: relative;
       margin-bottom: 2rem; }
-      /* line 777, /Users/Andrew/inpower/assets/scss/_main.sass */
+      /* line 778, /Users/Andrew/inpower/assets/scss/_main.sass */
       .footer .footerTop #footerwidgets h3:after {
         position: absolute;
         content: "";
@@ -6123,17 +6127,17 @@ h1.page-title {
         background-color: #EF7A23;
         bottom: -15px;
         left: 0; }
-    /* line 785, /Users/Andrew/inpower/assets/scss/_main.sass */
+    /* line 786, /Users/Andrew/inpower/assets/scss/_main.sass */
     .footer .footerTop #footerwidgets #sb_instagram .sb_instagram_header h3.sbi_no_bio {
       font-weight: 300;
       padding-top: 3px !important; }
-      /* line 789, /Users/Andrew/inpower/assets/scss/_main.sass */
+      /* line 790, /Users/Andrew/inpower/assets/scss/_main.sass */
       .footer .footerTop #footerwidgets #sb_instagram .sb_instagram_header h3.sbi_no_bio::after {
         display: none; }
-    /* line 791, /Users/Andrew/inpower/assets/scss/_main.sass */
+    /* line 792, /Users/Andrew/inpower/assets/scss/_main.sass */
     .footer .footerTop #footerwidgets li {
       list-style: none; }
-    /* line 793, /Users/Andrew/inpower/assets/scss/_main.sass */
+    /* line 794, /Users/Andrew/inpower/assets/scss/_main.sass */
     .footer .footerTop #footerwidgets a.button {
       background-color: transparent;
       border: 1px solid #EF7A23;
@@ -6144,7 +6148,7 @@ h1.page-title {
       .footer .footerTop #footerwidgets a.button:hover {
         background-color: rgba(239, 122, 35, 0.41);
         color: #fff; }
-    /* line 797, /Users/Andrew/inpower/assets/scss/_main.sass */
+    /* line 798, /Users/Andrew/inpower/assets/scss/_main.sass */
     .footer .footerTop #footerwidgets a.linkedin img {
       width: 30px;
       margin-right: .5rem;
@@ -6153,7 +6157,7 @@ h1.page-title {
       -o-transition: all 0.3s ease-in-out;
       -ms-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
-      /* line 801, /Users/Andrew/inpower/assets/scss/_main.sass */
+      /* line 802, /Users/Andrew/inpower/assets/scss/_main.sass */
       .footer .footerTop #footerwidgets a.linkedin img:hover {
         opacity: .7;
         -webkit-transition: all 0.3s ease-in-out;
@@ -6161,22 +6165,22 @@ h1.page-title {
         -o-transition: all 0.3s ease-in-out;
         -ms-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out; }
-    /* line 804, /Users/Andrew/inpower/assets/scss/_main.sass */
+    /* line 805, /Users/Andrew/inpower/assets/scss/_main.sass */
     .footer .footerTop #footerwidgets #sb_instagram {
       margin-top: -20px; }
-      /* line 806, /Users/Andrew/inpower/assets/scss/_main.sass */
+      /* line 807, /Users/Andrew/inpower/assets/scss/_main.sass */
       .footer .footerTop #footerwidgets #sb_instagram .sbi_load_btn {
         display: none !important; }
-      /* line 808, /Users/Andrew/inpower/assets/scss/_main.sass */
+      /* line 809, /Users/Andrew/inpower/assets/scss/_main.sass */
       .footer .footerTop #footerwidgets #sb_instagram .sbi_follow_btn {
         float: right;
         margin-right: 10px; }
-  /* line 813, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 814, /Users/Andrew/inpower/assets/scss/_main.sass */
   .footer #inner-footer {
     background-color: #016499;
     color: #C9C9C9;
     padding: 1rem 1rem .35rem; }
-    /* line 817, /Users/Andrew/inpower/assets/scss/_main.sass */
+    /* line 818, /Users/Andrew/inpower/assets/scss/_main.sass */
     .footer #inner-footer a {
       color: #C9C9C9; }
 
@@ -6186,7 +6190,7 @@ h1.page-title {
 /********************* */
 /* PLUGIN STYLES */
 /********************* */
-/* line 829, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 830, /Users/Andrew/inpower/assets/scss/_main.sass */
 .gform_body ul {
   list-style: none outside none;
   margin: 0; }
@@ -6194,7 +6198,7 @@ h1.page-title {
 /********************* */
 /* CONTACT FORM 7 STYLES */
 /********************* */
-/* line 838, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 839, /Users/Andrew/inpower/assets/scss/_main.sass */
 .wpcf7-submit {
   background: rgba(1, 100, 153, 0.79);
   font-size: 1.5rem;
@@ -6222,11 +6226,11 @@ h1.page-title {
     color: #016499; }
 
 /*Styles used for radio buttons*/
-/* line 846, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 847, /Users/Andrew/inpower/assets/scss/_main.sass */
 span.wpcf7-list-item {
   margin: 0; }
 
-/* line 849, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 850, /Users/Andrew/inpower/assets/scss/_main.sass */
 .wpcf7-list-item input {
   position: absolute !important;
   clip: rect(0, 0, 0, 0);
@@ -6235,7 +6239,7 @@ span.wpcf7-list-item {
   border: 0;
   overflow: hidden; }
 
-/* line 857, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 858, /Users/Andrew/inpower/assets/scss/_main.sass */
 .wpcf7-list-item label span {
   display: inline-block;
   float: left;
@@ -6256,23 +6260,23 @@ span.wpcf7-list-item {
   -ms-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out; }
 
-/* line 873, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 874, /Users/Andrew/inpower/assets/scss/_main.sass */
 .wpcf7-list-item label:hover {
   cursor: pointer; }
 
-/* line 876, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 877, /Users/Andrew/inpower/assets/scss/_main.sass */
 .wpcf7-list-item input:checked + span {
   background-color: #D8D8D8;
   color: #7d7d7d;
   box-shadow: none; }
 
-/* line 881, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 882, /Users/Andrew/inpower/assets/scss/_main.sass */
 .wpcf7-list-item label span {
   background-color: transparent;
   box-shadow: none;
   -webkit-box-shadow: none; }
 
-/* line 887, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 888, /Users/Andrew/inpower/assets/scss/_main.sass */
 div.wpcf7-mail-sent-ok {
   border: 2px solid #5ec4c5;
   border-radius: 5px;
@@ -6283,83 +6287,83 @@ div.wpcf7-mail-sent-ok {
 /********************* */
 /* LEAD GEN PAGE */
 /********************* */
-/* line 900, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 901, /Users/Andrew/inpower/assets/scss/_main.sass */
 body.page-id-63 .entry-content {
   background-color: #F9F8F4;
   padding: 2.5rem;
   color: #7d7d7d; }
 
-/* line 904, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 905, /Users/Andrew/inpower/assets/scss/_main.sass */
 body.page-id-63 #main {
   position: relative;
   margin-top: -250px; }
 
-/* line 907, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 908, /Users/Andrew/inpower/assets/scss/_main.sass */
 body.page-id-63 #leadGenHeader {
   width: 48%;
   position: relative;
   color: #fff;
   margin: 2.5rem auto;
   text-shadow: 1px 1px 3px rgba(23, 23, 23, 0.31); }
-  /* line 913, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 914, /Users/Andrew/inpower/assets/scss/_main.sass */
   body.page-id-63 #leadGenHeader h1 {
     color: #fff;
     font-weight: 700;
     margin-bottom: 2rem;
     line-height: 2.8rem; }
-  /* line 918, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 919, /Users/Andrew/inpower/assets/scss/_main.sass */
   body.page-id-63 #leadGenHeader p {
     font-size: 1.35rem;
     width: 70%; }
 
-/* line 921, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 922, /Users/Andrew/inpower/assets/scss/_main.sass */
 body.page-id-63 header.article-header {
   display: none; }
 
-/* line 923, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 924, /Users/Andrew/inpower/assets/scss/_main.sass */
 body.page-id-63 .footer {
   padding-top: 14rem;
   background-image: url("../images/sun-footer.png");
   background-position: 50% 78px;
   background-repeat: no-repeat;
   background-size: 292px; }
-  /* line 929, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 930, /Users/Andrew/inpower/assets/scss/_main.sass */
   body.page-id-63 .footer .footerArc {
     display: none; }
 
 /********************* */
 /* BLOG PAGE STYLES */
 /********************* */
-/* line 938, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 939, /Users/Andrew/inpower/assets/scss/_main.sass */
 body.blog main#main {
-  margin-top: -225px;
+  margin-top: -325px;
   position: relative; }
-  /* line 941, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 942, /Users/Andrew/inpower/assets/scss/_main.sass */
   body.blog main#main article {
     padding: 1rem 3rem;
     background: #fff; }
-    /* line 944, /Users/Andrew/inpower/assets/scss/_main.sass */
+    /* line 945, /Users/Andrew/inpower/assets/scss/_main.sass */
     body.blog main#main article:first-of-type {
       padding-top: 3rem; }
-    /* line 946, /Users/Andrew/inpower/assets/scss/_main.sass */
+    /* line 947, /Users/Andrew/inpower/assets/scss/_main.sass */
     body.blog main#main article h2 {
       font-size: 1.5rem;
       color: #7d7d7d; }
-      /* line 949, /Users/Andrew/inpower/assets/scss/_main.sass */
+      /* line 950, /Users/Andrew/inpower/assets/scss/_main.sass */
       body.blog main#main article h2 a {
         color: #7d7d7d; }
-    /* line 951, /Users/Andrew/inpower/assets/scss/_main.sass */
+    /* line 952, /Users/Andrew/inpower/assets/scss/_main.sass */
     body.blog main#main article .entry-content {
       padding: 0; }
 
-/* line 954, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 955, /Users/Andrew/inpower/assets/scss/_main.sass */
 .button.read-more {
   background: transparent;
   border: 1px solid goldenrod;
   color: #7a7a7a;
   font-size: 1rem;
   margin-top: 1rem; }
-  /* line 960, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 961, /Users/Andrew/inpower/assets/scss/_main.sass */
   .button.read-more:hover {
     background: rgba(248, 186, 41, 0.6);
     color: #fff; }
