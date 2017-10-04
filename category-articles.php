@@ -42,11 +42,11 @@
 
 					<?php joints_page_navi(); ?>
 
-				<?php else : ?>
+				<?php //else : ?>
 
-					<?php get_template_part( 'parts/content', 'missing' ); ?>
+					<?php// get_template_part( 'parts/content', 'missing' ); ?>
 
-				<?php endif; ?>
+				<?php //endif; ?>
 
 		    </main> <!-- end #main -->
 
