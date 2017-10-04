@@ -6370,57 +6370,63 @@ body.category-articles main#main {
     /* line 964, /Users/Andrew/inpower/assets/scss/_main.sass */
     body.category-articles main#main article .entry-content {
       padding: 0; }
-    /* line 966, /Users/Andrew/inpower/assets/scss/_main.sass */
-    body.category-articles main#main article .thumb-wrap {
+    /* line 967, /Users/Andrew/inpower/assets/scss/_main.sass */
+    body.category-articles main#main article .thumb-wrap a {
       position: relative; }
-      /* line 968, /Users/Andrew/inpower/assets/scss/_main.sass */
-      body.category-articles main#main article .thumb-wrap:after {
+      /* line 969, /Users/Andrew/inpower/assets/scss/_main.sass */
+      body.category-articles main#main article .thumb-wrap a:after {
         content: "";
         position: absolute;
         width: 100%;
         height: 100%;
-        background: rgba(239, 122, 35, 0.3); }
+        background: rgba(239, 122, 35, 0.3);
+        left: 0;
+        top: 0;
+        cursor: pointer; }
+    /* line 978, /Users/Andrew/inpower/assets/scss/_main.sass */
+    body.category-articles main#main article .thumb-wrap img {
+      width: 100%; }
 
-/* line 975, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 981, /Users/Andrew/inpower/assets/scss/_main.sass */
 .button.read-more {
   background: transparent;
   border: 1px solid goldenrod;
   color: #7a7a7a;
   font-size: 1rem;
   margin-top: 1rem; }
-  /* line 981, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 987, /Users/Andrew/inpower/assets/scss/_main.sass */
   .button.read-more:hover {
     background: rgba(248, 186, 41, 0.6);
     color: #fff; }
 
-/* line 985, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 991, /Users/Andrew/inpower/assets/scss/_main.sass */
 a.button.read-more.prev {
   margin: 4rem 0 0 2.5rem; }
 
-/* line 991, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 997, /Users/Andrew/inpower/assets/scss/_main.sass */
 body.single main#main {
   margin-top: -325px;
   background: #fff;
   padding: 2rem;
   position: relative; }
-  /* line 996, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 1002, /Users/Andrew/inpower/assets/scss/_main.sass */
   body.single main#main section.entry-content {
     padding: 0 0 2rem; }
-  /* line 998, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 1004, /Users/Andrew/inpower/assets/scss/_main.sass */
   body.single main#main header.article-header {
     position: relative;
     height: 300px;
     background-size: cover;
     margin-bottom: 2rem;
     position: relative; }
-    /* line 1004, /Users/Andrew/inpower/assets/scss/_main.sass */
+    /* line 1010, /Users/Andrew/inpower/assets/scss/_main.sass */
     body.single main#main header.article-header:after {
       content: "";
       position: absolute;
       width: 100%;
       height: 100%;
       background: rgba(239, 122, 35, 0.3); }
-  /* line 1010, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 1016, /Users/Andrew/inpower/assets/scss/_main.sass */
   body.single main#main h1.entry-title.single-title {
     color: #fff;
     padding: 2rem;
@@ -6428,10 +6434,10 @@ body.single main#main {
     bottom: 0;
     left: 0;
     z-index: 100; }
-  /* line 1017, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 1023, /Users/Andrew/inpower/assets/scss/_main.sass */
   body.single main#main .entry-content {
     z-index: 1; }
-    /* line 1019, /Users/Andrew/inpower/assets/scss/_main.sass */
+    /* line 1025, /Users/Andrew/inpower/assets/scss/_main.sass */
     body.single main#main .entry-content img.wp-post-image {
       margin-bottom: 2rem; }
 
