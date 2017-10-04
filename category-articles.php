@@ -22,17 +22,23 @@
 
 					<h1 class="page-title">Articles / Blog </h1>
 					<!-- custom query for articles -->
-					<?php $articles_query = $wp_query; ?>
+					<?php// $articles_query = $wp_query; ?>
 					<!-- Do stuff... -->
-					<?php query_posts( 'posts_per_page=4' ); ?>
+					<?php //query_posts( 'posts_per_page=4' ); ?>
 
-					<?php while ( have_posts() ) : the_post(); ?>
+					<?php//while ( have_posts() ) : the_post(); ?>
 						<!-- To see additional archive styles, visit the /parts directory -->
-						<?php get_template_part( 'parts/loop', 'archive' ); ?>
+						<?php //get_template_part( 'parts/loop', 'archive' ); ?>
 
-					<?php endwhile; ?>
+					<?php //endwhile; ?>
 
-					<?php $wp_query = clone $articles_query; ?>
+					<?php// $wp_query = clone $articles_query; ?>
+
+					<?php if ( have_posts() ) : ?>
+						<?php while ( have_posts() ) : the_post(); ?>
+							<?php get_template_part( 'parts/loop', 'archive' ); ?>
+						<?php endwhile; ?>
+					<?php endif; ?>
 
 					<?php joints_page_navi(); ?>
 
