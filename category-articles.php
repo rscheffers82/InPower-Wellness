@@ -24,13 +24,15 @@
 					<!-- custom query for articles -->
 					<?php $articles_query = $wp_query; ?>
 					<!-- Do stuff... -->
-					<?php query_posts( 'category_name=articles&posts_per_page=4' ); ?>
+					<?php query_posts( 'posts_per_page=4' ); ?>
 
 					<?php while ( have_posts() ) : the_post(); ?>
 						<!-- To see additional archive styles, visit the /parts directory -->
 						<?php get_template_part( 'parts/loop', 'archive' ); ?>
 
 					<?php endwhile; ?>
+
+					<?php $wp_query = clone $articles_query; ?>
 
 					<?php joints_page_navi(); ?>
 
