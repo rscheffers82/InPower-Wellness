@@ -33,7 +33,8 @@
 
 					if($link = get_next_posts_link()) {
 
-						echo '<a href="'. $link . '" class="button read-more prev">« Previous Articles</a>';
+						printf('<a href="%s" class="button read-more prev">« Previous Articles</a>', $link);
+
 					}
 					?>
 
@@ -43,7 +44,7 @@
 
 				<?php //else : ?>
 
-					<?php// get_template_part( 'parts/content', 'missing' ); ?>
+					<?php // get_template_part( 'parts/content', 'missing' ); ?>
 
 				<?php //endif; ?>
 
