@@ -31,6 +31,8 @@
 
 					<?php endwhile; ?>
 
+					<a href="<?php previous_posts_link(); ?>" class="button read-more prev">« Previous Articles</a>
+
 					<?php wp_reset_query(); // reset the query ?>
 
 					<?php joints_page_navi(); ?>
