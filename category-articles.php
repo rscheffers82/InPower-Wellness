@@ -31,12 +31,11 @@
 
 					<?php endwhile;
 
-					if($link = get_next_posts_link()) { ?>
+					if($link = get_next_posts_link()) {
 
-						<a href="<?php next_posts_link(); ?>" class="button read-more prev">« Previous Articles</a>
-
-					<?php }
-
+						echo '<a href="'. $link . '" class="button read-more prev">« Previous Articles</a>';
+					}
+					?>
 
 					<?php wp_reset_query(); // reset the query ?>
 
