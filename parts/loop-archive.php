@@ -1,7 +1,9 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article">
 	<div class="row">
 		<div class="large-4 medium-4 columns">
-			<a href="<?php the_permalink() ?>"><?php the_post_thumbnail('blog-thumb'); ?></a>
+			<div class="thumb-wrap">
+				<a href="<?php the_permalink() ?>"><?php the_post_thumbnail('blog-thumb'); ?></a>
+			</div>
 		</div>
 		<div class="large-8 medium-8 columns">
 			<header class="article-header">
