@@ -6335,31 +6335,31 @@ body.page-id-63 .footer {
 /* BLOG PAGE STYLES */
 /********************* */
 /* line 939, /Users/Andrew/inpower/assets/scss/_main.sass */
-body.blog main#main {
+body.category-articles main#main {
   margin-top: -325px;
   position: relative; }
   /* line 942, /Users/Andrew/inpower/assets/scss/_main.sass */
-  body.blog main#main article {
+  body.category-articles main#main article {
     padding: 1rem 3rem;
     background: #fff; }
     /* line 945, /Users/Andrew/inpower/assets/scss/_main.sass */
-    body.blog main#main article:first-of-type {
+    body.category-articles main#main article:first-of-type {
       padding-top: 3rem; }
     /* line 947, /Users/Andrew/inpower/assets/scss/_main.sass */
-    body.blog main#main article:last-of-type {
+    body.category-articles main#main article:last-of-type {
       border-bottom: 1px solid #CECECE; }
     /* line 949, /Users/Andrew/inpower/assets/scss/_main.sass */
-    body.blog main#main article h2 {
+    body.category-articles main#main article h2 {
       font-size: 1.5rem;
       color: #7d7d7d; }
       /* line 952, /Users/Andrew/inpower/assets/scss/_main.sass */
-      body.blog main#main article h2 a {
+      body.category-articles main#main article h2 a {
         color: #7d7d7d; }
         /* line 954, /Users/Andrew/inpower/assets/scss/_main.sass */
-        body.blog main#main article h2 a:hover {
+        body.category-articles main#main article h2 a:hover {
           color: #494949; }
     /* line 956, /Users/Andrew/inpower/assets/scss/_main.sass */
-    body.blog main#main article .entry-content {
+    body.category-articles main#main article .entry-content {
       padding: 0; }
 
 /* line 959, /Users/Andrew/inpower/assets/scss/_main.sass */
