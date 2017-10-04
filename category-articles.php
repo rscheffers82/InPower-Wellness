@@ -29,9 +29,14 @@
 						<!-- To see additional archive styles, visit the /parts directory -->
 						<?php get_template_part( 'parts/loop', 'archive' ); ?>
 
-					<?php endwhile; ?>
+					<?php endwhile;
 
-					<a href="<?php next_posts_link(); ?>" class="button read-more prev">« Previous Articles</a>
+					if($link = get_next_posts_link()) { ?>
+
+						<a href="<?php next_posts_link(); ?>" class="button read-more prev">« Previous Articles</a>
+
+					<?php }
+
 
 					<?php wp_reset_query(); // reset the query ?>
 

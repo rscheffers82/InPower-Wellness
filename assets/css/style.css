@@ -6354,7 +6354,7 @@ body.category-articles main#main {
         position: absolute;
         width: 87%;
         left: 6%;
-        bottom: -20px;
+        bottom: -10px;
         height: 1px;
         background: #CECECE; }
     /* line 957, /Users/Andrew/inpower/assets/scss/_main.sass */
@@ -6382,6 +6382,10 @@ body.category-articles main#main {
   .button.read-more:hover {
     background: rgba(248, 186, 41, 0.6);
     color: #fff; }
+
+/* line 977, /Users/Andrew/inpower/assets/scss/_main.sass */
+a.button.read-more.prev {
+  margin: 4rem 0 0 2.5rem; }
 
 /******************************************************************
 
