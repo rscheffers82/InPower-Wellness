@@ -20,20 +20,25 @@
 
 		    <main id="main" class="large-8 large-offset-2 medium-8 medium-offset-2 columns" role="main">
 
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+					<h1 class="page-title">Articles / Blog </h1>
+					<!-- custom query for articles -->
+					<?php $articles_query = $wp_query; ?>
+					<!-- Do stuff... -->
+					<?php query_posts( 'category_name=articles&posts_per_page=4' ); ?>
 
-				 <!-- To see additional archive styles, visit the /parts directory -->
-				 <?php get_template_part( 'parts/loop', 'archive' ); ?>
+					<?php while ( have_posts() ) : the_post(); ?>
+						<!-- To see additional archive styles, visit the /parts directory -->
+						<?php get_template_part( 'parts/loop', 'archive' ); ?>
 
-			 <?php endwhile; ?>
+					<?php endwhile; ?>
 
-				 <?php joints_page_navi(); ?>
+					<?php joints_page_navi(); ?>
 
-			 <?php else : ?>
+				<?php else : ?>
 
-				 <?php get_template_part( 'parts/content', 'missing' ); ?>
+					<?php get_template_part( 'parts/content', 'missing' ); ?>
 
-			 <?php endif; ?>
+				<?php endif; ?>
 
 		    </main> <!-- end #main -->
 

@@ -6346,24 +6346,30 @@ body.blog main#main {
     body.blog main#main article:first-of-type {
       padding-top: 3rem; }
     /* line 947, /Users/Andrew/inpower/assets/scss/_main.sass */
+    body.blog main#main article:last-of-type {
+      border-bottom: 1px solid #CECECE; }
+    /* line 949, /Users/Andrew/inpower/assets/scss/_main.sass */
     body.blog main#main article h2 {
       font-size: 1.5rem;
       color: #7d7d7d; }
-      /* line 950, /Users/Andrew/inpower/assets/scss/_main.sass */
+      /* line 952, /Users/Andrew/inpower/assets/scss/_main.sass */
       body.blog main#main article h2 a {
         color: #7d7d7d; }
-    /* line 952, /Users/Andrew/inpower/assets/scss/_main.sass */
+        /* line 954, /Users/Andrew/inpower/assets/scss/_main.sass */
+        body.blog main#main article h2 a:hover {
+          color: #494949; }
+    /* line 956, /Users/Andrew/inpower/assets/scss/_main.sass */
     body.blog main#main article .entry-content {
       padding: 0; }
 
-/* line 955, /Users/Andrew/inpower/assets/scss/_main.sass */
+/* line 959, /Users/Andrew/inpower/assets/scss/_main.sass */
 .button.read-more {
   background: transparent;
   border: 1px solid goldenrod;
   color: #7a7a7a;
   font-size: 1rem;
   margin-top: 1rem; }
-  /* line 961, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 965, /Users/Andrew/inpower/assets/scss/_main.sass */
   .button.read-more:hover {
     background: rgba(248, 186, 41, 0.6);
     color: #fff; }
