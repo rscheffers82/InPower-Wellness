@@ -6387,6 +6387,28 @@ body.category-articles main#main {
 a.button.read-more.prev {
   margin: 4rem 0 0 2.5rem; }
 
+/* line 983, /Users/Andrew/inpower/assets/scss/_main.sass */
+body.single main#main {
+  margin-top: -325px; }
+  /* line 985, /Users/Andrew/inpower/assets/scss/_main.sass */
+  body.single main#main section.entry-content {
+    padding: 0 0 2rem; }
+  /* line 987, /Users/Andrew/inpower/assets/scss/_main.sass */
+  body.single main#main header.article-header {
+    margin-bottom: -166px;
+    position: relative;
+    z-index: 100; }
+  /* line 991, /Users/Andrew/inpower/assets/scss/_main.sass */
+  body.single main#main h1.entry-title.single-title {
+    color: #fff;
+    padding: 2rem; }
+  /* line 994, /Users/Andrew/inpower/assets/scss/_main.sass */
+  body.single main#main .entry-content {
+    z-index: 1; }
+    /* line 996, /Users/Andrew/inpower/assets/scss/_main.sass */
+    body.single main#main .entry-content img.wp-post-image {
+      margin-bottom: 2rem; }
+
 /******************************************************************
 
 Stylesheet: Retina Screens & Devices Stylesheet
@@ -6491,26 +6513,6 @@ to display none.
   .respond-form,
   nav {
     display: none; } }
-
-/* line 3, /Users/Andrew/inpower/assets/scss/_andrew.sass */
-article {
-  padding: 1rem 3rem;
-  background: #fff; }
-  /* line 6, /Users/Andrew/inpower/assets/scss/_andrew.sass */
-  article:first-of-type {
-    padding-top: 3rem; }
-  /* line 8, /Users/Andrew/inpower/assets/scss/_andrew.sass */
-  article:last-of-type {
-    position: relative; }
-    /* line 10, /Users/Andrew/inpower/assets/scss/_andrew.sass */
-    article:last-of-type:after {
-      content: "";
-      position: absolute;
-      width: 87%;
-      left: 6%;
-      bottom: -20px;
-      height: 1px;
-      background: #CECECE; }
 
 /********************* */
 /* FOOTER STYLES */
