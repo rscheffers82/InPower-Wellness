@@ -4,7 +4,7 @@ jQuery(document).ready(function() {
     // Also fetch the vars from the form and add them as params to the url
       console.log('EventHandler code run to attach JS code to Lead Gen form submit');
 
-      var wpcf7Elm = document.querySelector( '#wpcf7-f69-p63-o1' );
+      var wpcf7Elm = document.querySelector( '#wpcf7-f69-p63-o1' ) || document.querySelector( '#wpcf7-f225-p218-o1' );
       console.log('wpcf7Elm: ', wpcf7Elm);
 
       wpcf7Elm.addEventListener( 'wpcf7submit', function( event ) {
