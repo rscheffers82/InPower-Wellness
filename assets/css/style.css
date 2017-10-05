@@ -6773,7 +6773,7 @@ body.page-id-63 header.article-header {
 body.page-id-63 .footer {
   padding-top: 14rem;
   background-image: url("../images/sun-footer.png");
-  background-position: 50% 78px;
+  background-position: 50% bottom;
   background-repeat: no-repeat;
   background-size: 292px; }
   /* line 930, /Users/Andrew/inpower/assets/scss/_main.sass */
@@ -6893,7 +6893,7 @@ body.single main#main {
 /********************* */
 /* MOBILE / RESPONSIVE */
 /********************* */
-@media print, screen and (min-width: 40em) {
+@media screen and (max-width: 63.9375em) {
   /* line 1035, /Users/Andrew/inpower/assets/scss/_main.sass */
   #hero {
     background-position: 59%, 50%;
@@ -6918,7 +6918,7 @@ body.single main#main {
     margin-top: 2rem;
     padding-right: 0; } }
 
-@media print, screen and (min-width: 25em) {
+@media screen and (max-width: 39.9375em) {
   /* line 1056, /Users/Andrew/inpower/assets/scss/_main.sass */
   #heroCTA {
     padding: 2rem; }

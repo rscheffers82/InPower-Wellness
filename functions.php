@@ -81,7 +81,7 @@ function custom_sidebar_init() {
 		'id'            => 'footer',
 		'description'   => '',
 	  'class'         => '',
-		'before_widget' => '<li id="%1$s" class="widget large-4 medium-12 columns">',
+		'before_widget' => '<li id="%1$s" class="widget large-4 medium-6 small-12 columns">',
 		'after_widget'  => '</li>',
 		'before_title'  => '<h3 class="widgettitle">',
 		'after_title'   => '</h3>',
