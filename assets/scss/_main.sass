@@ -211,6 +211,20 @@ ul li.is-dropdown-submenu-parent
     .dropdown
       margin-left: 20px
 
+//
+// MOBILE NAVIGATION STYLES
+//
+
+.top-bar-right ul.menu
+  background-color: #FAF8F5
+  li a
+    color: #B4B0A5
+    text-transform: uppercase
+    &:hover
+      color: #494949
+  ul.submenu
+    margin-left: 20px
+
 
 /*********************
 /* HERO SECTION
@@ -770,7 +784,7 @@ h1.page-title
     background-color: $lightgray
     padding: 150px 0 20px
     background-image: url('../images/sun-footer.png')
-    background-position: 50% 410px
+    background-position: 50% bottom
     background-repeat: no-repeat
     background-size: 292px
     #footerwidgets
@@ -813,12 +827,10 @@ h1.page-title
         .sbi_follow_btn
           float: right
           margin-right: 10px
-
-
   #inner-footer
     background-color: $blue
     color: #C9C9C9
-    padding: 1rem 1rem .35rem
+    padding: 1rem 0 .35rem
     a
       color: #C9C9C9
 
@@ -1037,6 +1049,10 @@ body.single
 /*********************
 
 @include breakpoint(medium down)
+  .columns
+    padding: 0 1rem 0 1rem
+  .top-bar
+    padding: 0
   #hero
     background-position: 59%, 50%
     height: 480px
@@ -1045,6 +1061,11 @@ body.single
       padding: 3rem
       float: none
   .testimonial .tut-flexslider
+    h2
+      float: left
+      padding-left: 10%
+      padding-right: 0
+      margin-top: 1rem
     h3
       width: 90%
       margin: 0 auto
@@ -1055,12 +1076,15 @@ body.single
       width: 100%
   .sidebar
     display: none
-  .footer .copyRight
-    float: left
-    border-top: 1px solid #7086a5
-    margin-top: .5rem
-    padding: .5rem 0
-    width: 100%
+  .footer
+    margin-top: 2rem
+    .copyRight
+      float: left
+      border-top: 1px solid #7086a5
+      margin-top: .5rem
+      padding: .5rem 0
+      width: 100%
+
 
 @include breakpoint(mobile down)
   #hero
