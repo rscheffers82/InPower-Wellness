@@ -13,8 +13,8 @@
 						    </g>
 						</svg>
 					</div>
-					
-					<?php if (is_page('corporate-intake')) {
+
+					<?php if ( is_page('corporate-intake') || is_page('thank-you') ) {
 
 					}
 					else {
