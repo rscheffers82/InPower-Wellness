@@ -754,14 +754,18 @@ h1.page-title
   clear: both
   margin-top: 0
   color: #494949
+  position: relative
   a
     color: #494949
     &:hover
       color: #c9c9c9
   .copyRight
     float: right
-  svg
-    margin-bottom: -109px
+  .svgWrapBottom
+    position: absolute
+    top: 0
+    height: 40px
+    width: 100%
   .footerTop
     background-color: $lightgray
     padding: 150px 0 20px
@@ -922,11 +926,12 @@ body.page-id-63
   header.article-header
     display: none
   .footer
-    padding-top: 14rem
+    padding-top: 9rem
     background-image: url('../images/sun-footer.png')
-    background-position: 50% bottom
+    background-position: 50% top
     background-repeat: no-repeat
     background-size: 292px
+    margin-top: 4rem
     .footerArc
       display: none
 
@@ -1039,7 +1044,7 @@ body.single
       margin: 0
       padding: 3rem
       float: none
-  .testimonial
+  .testimonial .tut-flexslider
     h3
       width: 90%
       margin: 0 auto
@@ -1047,22 +1052,43 @@ body.single
     img
       float: none
       margin: 0 auto 2rem
-    h2
-      padding-left: 10%
-      margin-top: 2rem
-      padding-right: 0
-
-@include breakpoint(mobile down)
-  #heroCTA
-    padding: 2rem
-    h2
-      font-size: 2rem
-      line-height: 2.35rem
+      width: 100%
+  .sidebar
+    display: none
   .footer .copyRight
     float: left
     border-top: 1px solid #7086a5
     margin-top: .5rem
     padding: .5rem 0
+    width: 100%
+
+@include breakpoint(mobile down)
+  #hero
+    .heroCTA
+      padding: 2rem
+      width: 100%
+      h2
+        font-size: 2rem
+        line-height: 2.35rem
+  .CTA-home
+    h1
+      line-height: 2rem
+      margin-bottom: 1rem
+  // Lead Gen Header
+  body.page-id-63
+    #leadGenHeader
+      width: 90%
+      margin: 1rem 2rem auto
+      h1
+        font-size: 1.75rem
+        line-height: 2.1rem
+      p
+        width: 90%
+    #main
+      margin-top: -170px
+  .footerTop
+    padding: 80px 0 20px
+
 
 
 
