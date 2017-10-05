@@ -1024,3 +1024,46 @@ body.single
       z-index: 1
       img.wp-post-image
         margin-bottom: 2rem
+
+
+
+/*********************
+/* MOBILE / RESPONSIVE
+/*********************
+
+@include breakpoint(medium)
+  #hero
+    background-position: 59%, 50%
+    height: 480px
+    .heroCTA
+      margin: 0
+      padding: 3rem
+      float: none
+  .testimonial
+    h3
+      width: 90%
+      margin: 0 auto
+      float: none
+    img
+      float: none
+      margin: 0 auto 2rem
+    h2
+      padding-left: 10%
+      margin-top: 2rem
+      padding-right: 0
+
+@include breakpoint(mobile)
+  #heroCTA
+    padding: 2rem
+    h2
+      font-size: 2rem
+      line-height: 2.35rem
+  .footer .copyRight
+    float: left
+    border-top: 1px solid #7086a5
+    margin-top: .5rem
+    padding: .5rem 0
+
+
+
+
