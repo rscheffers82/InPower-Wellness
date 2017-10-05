@@ -24,5 +24,7 @@ function site_scripts() {
 
     // load momentjs for quick date formatting from Lead Gen to Thank you page
     wp_enqueue_script( 'moment-js', 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js', array( 'jquery' ), '', true );
+
+    wp_enqueue_script( 'inpowerwellness-scripts', get_template_directory_uri() . '/js/lead-gen-thank-you.js', array( 'jquery', 'moment-js' ), '', true );
 }
 add_action('wp_enqueue_scripts', 'site_scripts', 999);
