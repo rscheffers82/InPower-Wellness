@@ -26,6 +26,10 @@ Template Name: Thank you page
 		margin-bottom: 3rem;
 	}
 
+	/*body.page-id-59 .entry-content {
+		padding: 0;
+	}*/
+
 </style>
 
 
@@ -76,9 +80,17 @@ Template Name: Thank you page
 						</div>
 							<p class="margin-bottom">But if you want to learn more about how workplace wellness is changing how companies work check out Caitlin's latest article.</p>
 
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			    	<?php get_template_part( 'parts/loop', 'archive' ); ?>
-			    <?php endwhile; endif; ?>
+							<?php global $query_articles; // required
+							$posts = query_posts($query_articles . 'category_name=articles&posts_per_page=1'); ?>
+
+							<?php while ( have_posts() ) : the_post(); ?>
+								<!-- To see additional archive styles, visit the /parts directory -->
+								<?php get_template_part( 'parts/loop', 'archive' ); ?>
+
+							<?php endwhile; ?>
+							<?php wp_reset_query(); // reset the query ?>
+
+
 			</main> <!-- end #main -->
 
 		</div> <!-- end #inner-content -->
