@@ -6802,21 +6802,21 @@ body.page-id-59 .footer, body.page-template-template-lead-gen .footer {
 /********************* */
 /* BLOG PAGE STYLES */
 /********************* */
-/* line 961, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+/* line 960, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
 body.category-articles main#main, body.page-template-template-thank-you-php main#main {
-  margin-top: -325px;
-  position: relative; }
-  /* line 964, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+  position: relative;
+  margin-top: -325px; }
+  /* line 963, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
   body.category-articles main#main article, body.page-template-template-thank-you-php main#main article {
     padding: 1rem 3rem;
     background: #fff; }
-    /* line 967, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+    /* line 966, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
     body.category-articles main#main article:first-of-type, body.page-template-template-thank-you-php main#main article:first-of-type {
       padding-top: 3rem; }
-    /* line 969, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+    /* line 968, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
     body.category-articles main#main article:last-of-type, body.page-template-template-thank-you-php main#main article:last-of-type {
       position: relative; }
-      /* line 971, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+      /* line 970, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
       body.category-articles main#main article:last-of-type:after, body.page-template-template-thank-you-php main#main article:last-of-type:after {
         content: "";
         position: absolute;
@@ -6825,23 +6825,23 @@ body.category-articles main#main, body.page-template-template-thank-you-php main
         bottom: -10px;
         height: 1px;
         background: #CECECE; }
-    /* line 979, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+    /* line 978, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
     body.category-articles main#main article h2, body.page-template-template-thank-you-php main#main article h2 {
       font-size: 1.5rem;
       color: #7d7d7d; }
-      /* line 982, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+      /* line 981, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
       body.category-articles main#main article h2 a, body.page-template-template-thank-you-php main#main article h2 a {
         color: #7d7d7d; }
-        /* line 984, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+        /* line 983, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
         body.category-articles main#main article h2 a:hover, body.page-template-template-thank-you-php main#main article h2 a:hover {
           color: #494949; }
-    /* line 986, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+    /* line 985, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
     body.category-articles main#main article .entry-content, body.page-template-template-thank-you-php main#main article .entry-content {
       padding: 0; }
-    /* line 989, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+    /* line 988, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
     body.category-articles main#main article .thumb-wrap a, body.page-template-template-thank-you-php main#main article .thumb-wrap a {
       position: relative; }
-      /* line 991, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+      /* line 990, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
       body.category-articles main#main article .thumb-wrap a:after, body.page-template-template-thank-you-php main#main article .thumb-wrap a:after {
         content: "";
         position: absolute;
@@ -6851,54 +6851,69 @@ body.category-articles main#main, body.page-template-template-thank-you-php main
         left: 0;
         top: 0;
         cursor: pointer; }
-    /* line 1000, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+    /* line 999, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
     body.category-articles main#main article .thumb-wrap img, body.page-template-template-thank-you-php main#main article .thumb-wrap img {
       width: 100%; }
 
-/* line 1004, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
-body.page-template-template-thank-you-php main#main {
+/* line 1003, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+body.page-template-template-thank-you main#main {
   margin-top: -150px; }
 
-/* line 1007, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+/* line 1005, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+body.page-template-template-thank-you #thankyouHeader {
+  width: 48%;
+  position: relative;
+  color: #fff;
+  margin: 2.5rem auto;
+  text-shadow: 1px 1px 3px rgba(23, 23, 23, 0.31); }
+
+/* line 1011, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+body.page-template-template-thank-you .thank-you-message {
+  background-color: #F9F8F4;
+  padding: 2.5rem;
+  color: #7d7d7d;
+  margin-bottom: 3rem; }
+
+/* line 1017, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
 .button.read-more {
   background: transparent;
   border: 1px solid goldenrod;
   color: #7a7a7a;
   font-size: 1rem;
   margin-top: 1rem; }
-  /* line 1013, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+  /* line 1023, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
   .button.read-more:hover {
     background: rgba(248, 186, 41, 0.6);
     color: #fff; }
 
-/* line 1017, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+/* line 1027, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
 a.button.read-more.prev {
   margin: 4rem 0 0 2.5rem; }
 
-/* line 1023, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+/* line 1033, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
 body.single main#main {
   margin-top: -325px;
   background: #fff;
   padding: 2rem;
   position: relative; }
-  /* line 1028, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+  /* line 1038, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
   body.single main#main section.entry-content {
     padding: 0 0 2rem; }
-  /* line 1030, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+  /* line 1040, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
   body.single main#main header.article-header {
     position: relative;
     height: 300px;
     background-size: cover;
     margin-bottom: 2rem;
     position: relative; }
-    /* line 1036, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+    /* line 1046, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
     body.single main#main header.article-header:after {
       content: "";
       position: absolute;
       width: 100%;
       height: 100%;
       background: rgba(239, 122, 35, 0.3); }
-  /* line 1042, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+  /* line 1052, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
   body.single main#main h1.entry-title.single-title {
     color: #fff;
     padding: 2rem;
@@ -6906,10 +6921,10 @@ body.single main#main {
     bottom: 0;
     left: 0;
     z-index: 100; }
-  /* line 1049, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+  /* line 1059, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
   body.single main#main .entry-content {
     z-index: 1; }
-    /* line 1051, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+    /* line 1061, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
     body.single main#main .entry-content img.wp-post-image {
       margin-bottom: 2rem; }
 
@@ -6917,44 +6932,44 @@ body.single main#main {
 /* MOBILE / RESPONSIVE */
 /********************* */
 @media screen and (max-width: 63.9375em) {
-  /* line 1061, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+  /* line 1071, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
   .columns {
     padding: 0 1rem 0 1rem; }
-  /* line 1063, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+  /* line 1073, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
   .top-bar {
     padding: 0; }
-  /* line 1065, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+  /* line 1075, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
   #hero {
     background-position: 59%, 50%;
     height: 480px; }
-    /* line 1068, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+    /* line 1078, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
     #hero .heroCTA {
       margin: 0;
       padding: 3rem;
       float: none; }
-  /* line 1073, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+  /* line 1083, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
   .testimonial .tut-flexslider h2 {
     float: left;
     padding-left: 10%;
     padding-right: 0;
     margin-top: 1rem; }
-  /* line 1078, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+  /* line 1088, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
   .testimonial .tut-flexslider h3 {
     width: 90%;
     margin: 0 auto;
     float: none; }
-  /* line 1082, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+  /* line 1092, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
   .testimonial .tut-flexslider img {
     float: none;
     margin: 0 auto 2rem;
     width: 100%; }
-  /* line 1086, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+  /* line 1096, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
   .sidebar {
     display: none; }
-  /* line 1088, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+  /* line 1098, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
   .footer {
     margin-top: 2rem; }
-    /* line 1090, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+    /* line 1100, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
     .footer .copyRight {
       float: left;
       border-top: 1px solid #7086a5;
@@ -6963,33 +6978,33 @@ body.single main#main {
       width: 100%; } }
 
 @media screen and (max-width: 39.9375em) {
-  /* line 1100, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+  /* line 1110, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
   #hero .heroCTA {
     padding: 2rem;
     width: 100%; }
-    /* line 1103, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+    /* line 1113, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
     #hero .heroCTA h2 {
       font-size: 2rem;
       line-height: 2.35rem; }
-  /* line 1107, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+  /* line 1117, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
   .CTA-home h1 {
     line-height: 2rem;
     margin-bottom: 1rem; }
-  /* line 1112, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+  /* line 1122, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
   body.page-template-template-lead-gen #leadGenHeader {
     width: 90%;
     margin: 1rem 2rem auto; }
-    /* line 1115, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+    /* line 1125, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
     body.page-template-template-lead-gen #leadGenHeader h1 {
       font-size: 1.75rem;
       line-height: 2.1rem; }
-    /* line 1118, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+    /* line 1128, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
     body.page-template-template-lead-gen #leadGenHeader p {
       width: 90%; }
-  /* line 1120, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+  /* line 1130, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
   body.page-template-template-lead-gen #main {
     margin-top: -170px; }
-  /* line 1122, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
+  /* line 1132, C:/d-data/Freelance/7. InPower Wellness/inpower-theme/assets/scss/_main.sass */
   .footerTop {
     padding: 80px 0 20px; } }
 

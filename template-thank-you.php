@@ -3,35 +3,6 @@
 Template Name: Thank you page
 */
 ?>
-<style>
-	#thankyouHeader {
-		width: 48%;
-		position: relative;
-		color: #fff;
-		margin: 2.5rem auto;
-		text-shadow: 1px 1px 3px rgba(23, 23, 23, 0.31);
-	}
-
-	#main {
-		position: relative;
-		margin-top: -150px;
-	}
-
-	body.page-id-59 .thank-you-message {
-    background-color: #F9F8F4;
-    padding: 2.5rem;
-    color: #7d7d7d;
-	}
-	body.page-id-59 .margin-bottom {
-		margin-bottom: 3rem;
-	}
-
-	/*body.page-id-59 .entry-content {
-		padding: 0;
-	}*/
-
-</style>
-
 
 <?php get_header(); ?>
 
@@ -57,7 +28,7 @@ Template Name: Thank you page
 		<div id="inner-content" class="row expanded">
 
 		    <main id="main" class="large-6 large-offset-3 medium-8 medium-offset-2 small-12 columns end" role="main">
-						<div class="thank-you-message margin-bottom">
+						<div class="thank-you-message">
 							<p><strong>Thank you! Your information has been submitted to InPower.</strong></p>
 							<p>
 								Caitlin Bourassa, Owner, will be contacting you shortly to follow up on your inquiry.
