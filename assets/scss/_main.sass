@@ -229,6 +229,9 @@ ul li.is-dropdown-submenu-parent
     a
       color: #B4B0A5
       text-transform: uppercase
+      &:hover
+        color: #7b7b7b
+        background-color: #f3f3f3
 
   ul.submenu
     margin-left: 20px
@@ -236,12 +239,15 @@ ul li.is-dropdown-submenu-parent
 .is-accordion-submenu-parent > a::after
   border-color: #B4B0A5 transparent transparent
 
-.menu-icon::after
-  background: #B4B0A5
-  box-shadow: 0 7px 0 #B4B0A5, 0 14px 0 #B4B0A5
-  &:hover
-    background: #7b7b7b
-    box-shadow: 0 7px 0 #7b7b7b, 0 14px 0 #7b7b7b
+.menu-icon
+  width: 17px
+  &::after
+    background: #B4B0A5
+    box-shadow: 0 5px 0 #B4B0A5, 0 10px 0 #B4B0A5
+    left: 10px
+    &:hover
+      background: #7b7b7b
+      box-shadow: 0 5px 0 #7b7b7b, 0 10px 0 #7b7b7b
 
 .position-right.is-transition-push::after
   box-shadow: none
@@ -1008,6 +1014,7 @@ body.category-articles, body.page-template-template-thank-you-php
         a
           position: relative
           display: block
+          +cssTransition(.2s)
           &:after
             content: ""
             position: absolute
@@ -1018,7 +1025,7 @@ body.category-articles, body.page-template-template-thank-you-php
             top: 0
             cursor: pointer
         a:hover:after
-          background: rgba(239,122,35,.6)
+          background: rgba(239,122,35,.4)
         img
           width: 100%
 

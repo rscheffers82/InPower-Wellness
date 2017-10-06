@@ -23,7 +23,7 @@
 					<h1 class="page-title">Articles / Blog </h1>
 					<!-- custom query for articles -->
 					<?php global $query_articles; // required
-					$posts = query_posts($query_articles.'&posts_per_page=4'); ?>
+					$posts = query_posts($query_articles.'posts_per_page=4&category_name=articles'); ?>
 
 					<?php while ( have_posts() ) : the_post(); ?>
 						<!-- To see additional archive styles, visit the /parts directory -->
@@ -33,8 +33,8 @@
 
 					// If there are older posts show the previous posts link
 					if($link = get_next_posts_link()) {
-
-						printf('<a href="%s" class="button read-more prev">« Previous Articles</a>', $link);
+						$linkUrl = echo get_next_post_link();
+						printf('<a href="%s" class="button read-more prev">« Previous Articles</a>', $linkUrl);
 
 					}
 					?>

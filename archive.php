@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 	<div id="content">
-		<div class="header-image" style="background-image: url('wp-content/themes/inpower/assets/images/articles.jpg')">
+		<div class="header-image" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/articles-header.jpg')">
 			<svg class="arc" viewBox="0 0 1440 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
 			    <desc>Created with Sketch.</desc>
@@ -18,33 +18,40 @@
 
 		<div id="inner-content" class="row">
 
-		    <main id="main" class="large-8 medium-8 columns" role="main">
+		    <main id="main" class="large-8 large-offset-2 medium-8 medium-offset-2 columns" role="main">
 
-		    	<header>
-		    		<h1 class="page-title"><?php the_archive_title();?></h1>
-					<?php the_archive_description('<div class="taxonomy-description">', '</div>');?>
-		    	</header>
+					<h1 class="page-title">Healing Body / Healing Mind </h1>
+					<!-- custom query for articles -->
+					<?php
+					$query = new WP_Query('cat=-6&posts_per_page=6'); ?>
 
-		    	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+					<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+						<!-- To see additional archive styles, visit the /parts directory -->
+						<?php get_template_part( 'parts/loop', 'archive' ); ?>
 
-					<!-- To see additional archive styles, visit the /parts directory -->
-					<?php get_template_part( 'parts/loop', 'archive' ); ?>
+					<?php endwhile;
 
-				<?php endwhile; ?>
+					// If there are older posts show the previous posts link
+					if($link = get_next_posts_link()) {
+						$linkUrl = echo get_next_post_link();
+						printf('<a href="%s" class="button read-more prev">« Previous Articles</a>', $linkUrl);
+
+					}
+					?>
+
+					<?php wp_reset_query(); // reset the query ?>
 
 					<?php joints_page_navi(); ?>
 
-				<?php else : ?>
+				<?php //else : ?>
 
-					<?php get_template_part( 'parts/content', 'missing' ); ?>
+					<?php // get_template_part( 'parts/content', 'missing' ); ?>
 
-				<?php endif; ?>
+				<?php //endif; ?>
 
-			</main> <!-- end #main -->
+		    </main> <!-- end #main -->
 
-			<?php get_sidebar(); ?>
-
-	    </div> <!-- end #inner-content -->
+		</div> <!-- end #inner-content -->
 
 	</div> <!-- end #content -->
 
