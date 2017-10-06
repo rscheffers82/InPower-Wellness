@@ -32,9 +32,8 @@
 					<?php endwhile;
 
 					// If there are older posts show the previous posts link
-					if($link = get_next_posts_link()) {
-						$linkUrl = echo get_next_post_link();
-						printf('<a href="%s" class="button read-more prev">« Previous Articles</a>', $linkUrl);
+					if($link = get_next_posts_link('« Previous Articles')) {
+						printf('<a href="%s" class="button read-more prev">« Previous Articles</a>', $link);
 
 					}
 					?>

@@ -6835,21 +6835,21 @@ body.page-id-59 .footer, body.page-template-template-lead-gen .footer {
 /* BLOG PAGE STYLES */
 /********************* */
 /* line 986, /Users/Andrew/inpower/assets/scss/_main.sass */
-body.category-articles main#main, body.page-template-template-thank-you-php main#main {
+body.category-articles main#main, body.page-template-template-thank-you-php main#main, body.blog main#main {
   position: relative;
   margin-top: -325px; }
   /* line 989, /Users/Andrew/inpower/assets/scss/_main.sass */
-  body.category-articles main#main article, body.page-template-template-thank-you-php main#main article {
+  body.category-articles main#main article, body.page-template-template-thank-you-php main#main article, body.blog main#main article {
     padding: 1rem 3rem;
     background: #fff; }
     /* line 992, /Users/Andrew/inpower/assets/scss/_main.sass */
-    body.category-articles main#main article:first-of-type, body.page-template-template-thank-you-php main#main article:first-of-type {
+    body.category-articles main#main article:first-of-type, body.page-template-template-thank-you-php main#main article:first-of-type, body.blog main#main article:first-of-type {
       padding-top: 3rem; }
     /* line 994, /Users/Andrew/inpower/assets/scss/_main.sass */
-    body.category-articles main#main article:last-of-type, body.page-template-template-thank-you-php main#main article:last-of-type {
+    body.category-articles main#main article:last-of-type, body.page-template-template-thank-you-php main#main article:last-of-type, body.blog main#main article:last-of-type {
       position: relative; }
       /* line 996, /Users/Andrew/inpower/assets/scss/_main.sass */
-      body.category-articles main#main article:last-of-type:after, body.page-template-template-thank-you-php main#main article:last-of-type:after {
+      body.category-articles main#main article:last-of-type:after, body.page-template-template-thank-you-php main#main article:last-of-type:after, body.blog main#main article:last-of-type:after {
         content: "";
         position: absolute;
         width: 87%;
@@ -6858,20 +6858,20 @@ body.category-articles main#main, body.page-template-template-thank-you-php main
         height: 1px;
         background: #CECECE; }
     /* line 1004, /Users/Andrew/inpower/assets/scss/_main.sass */
-    body.category-articles main#main article h2, body.page-template-template-thank-you-php main#main article h2 {
+    body.category-articles main#main article h2, body.page-template-template-thank-you-php main#main article h2, body.blog main#main article h2 {
       font-size: 1.5rem;
       color: #7d7d7d; }
       /* line 1007, /Users/Andrew/inpower/assets/scss/_main.sass */
-      body.category-articles main#main article h2 a, body.page-template-template-thank-you-php main#main article h2 a {
+      body.category-articles main#main article h2 a, body.page-template-template-thank-you-php main#main article h2 a, body.blog main#main article h2 a {
         color: #7d7d7d; }
         /* line 1009, /Users/Andrew/inpower/assets/scss/_main.sass */
-        body.category-articles main#main article h2 a:hover, body.page-template-template-thank-you-php main#main article h2 a:hover {
+        body.category-articles main#main article h2 a:hover, body.page-template-template-thank-you-php main#main article h2 a:hover, body.blog main#main article h2 a:hover {
           color: #494949; }
     /* line 1011, /Users/Andrew/inpower/assets/scss/_main.sass */
-    body.category-articles main#main article .entry-content, body.page-template-template-thank-you-php main#main article .entry-content {
+    body.category-articles main#main article .entry-content, body.page-template-template-thank-you-php main#main article .entry-content, body.blog main#main article .entry-content {
       padding: 0; }
     /* line 1014, /Users/Andrew/inpower/assets/scss/_main.sass */
-    body.category-articles main#main article .thumb-wrap a, body.page-template-template-thank-you-php main#main article .thumb-wrap a {
+    body.category-articles main#main article .thumb-wrap a, body.page-template-template-thank-you-php main#main article .thumb-wrap a, body.blog main#main article .thumb-wrap a {
       position: relative;
       display: block;
       -webkit-transition: all 0.2s ease-in-out;
@@ -6880,7 +6880,7 @@ body.category-articles main#main, body.page-template-template-thank-you-php main
       -ms-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
       /* line 1018, /Users/Andrew/inpower/assets/scss/_main.sass */
-      body.category-articles main#main article .thumb-wrap a:after, body.page-template-template-thank-you-php main#main article .thumb-wrap a:after {
+      body.category-articles main#main article .thumb-wrap a:after, body.page-template-template-thank-you-php main#main article .thumb-wrap a:after, body.blog main#main article .thumb-wrap a:after {
         content: "";
         position: absolute;
         width: 100%;
@@ -6890,10 +6890,10 @@ body.category-articles main#main, body.page-template-template-thank-you-php main
         top: 0;
         cursor: pointer; }
     /* line 1027, /Users/Andrew/inpower/assets/scss/_main.sass */
-    body.category-articles main#main article .thumb-wrap a:hover:after, body.page-template-template-thank-you-php main#main article .thumb-wrap a:hover:after {
+    body.category-articles main#main article .thumb-wrap a:hover:after, body.page-template-template-thank-you-php main#main article .thumb-wrap a:hover:after, body.blog main#main article .thumb-wrap a:hover:after {
       background: rgba(239, 122, 35, 0.4); }
     /* line 1029, /Users/Andrew/inpower/assets/scss/_main.sass */
-    body.category-articles main#main article .thumb-wrap img, body.page-template-template-thank-you-php main#main article .thumb-wrap img {
+    body.category-articles main#main article .thumb-wrap img, body.page-template-template-thank-you-php main#main article .thumb-wrap img, body.blog main#main article .thumb-wrap img {
       width: 100%; }
 
 /* line 1033, /Users/Andrew/inpower/assets/scss/_main.sass */
