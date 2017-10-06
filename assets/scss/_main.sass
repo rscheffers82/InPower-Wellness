@@ -215,16 +215,36 @@ ul li.is-dropdown-submenu-parent
 // MOBILE NAVIGATION STYLES
 //
 
-.top-bar-right ul.menu
+.top-bar-right.hide-for-medium ul.menu
   background-color: #FAF8F5
   li a
     color: #B4B0A5
     text-transform: uppercase
     &:hover
-      color: #494949
+      color: #7b7b7b
+      background-color: #f3f3f3
+
+.off-canvas ul.menu
+  li
+    a
+      color: #B4B0A5
+      text-transform: uppercase
+
   ul.submenu
     margin-left: 20px
 
+.is-accordion-submenu-parent > a::after
+  border-color: #B4B0A5 transparent transparent
+
+.menu-icon::after
+  background: #B4B0A5
+  box-shadow: 0 7px 0 #B4B0A5, 0 14px 0 #B4B0A5
+  &:hover
+    background: #7b7b7b
+    box-shadow: 0 7px 0 #7b7b7b, 0 14px 0 #7b7b7b
+
+.position-right.is-transition-push::after
+  box-shadow: none
 
 /*********************
 /* HERO SECTION
@@ -987,6 +1007,7 @@ body.category-articles, body.page-template-template-thank-you-php
       .thumb-wrap
         a
           position: relative
+          display: block
           &:after
             content: ""
             position: absolute
@@ -996,6 +1017,8 @@ body.category-articles, body.page-template-template-thank-you-php
             left: 0
             top: 0
             cursor: pointer
+        a:hover:after
+          background: rgba(239,122,35,.6)
         img
           width: 100%
 
