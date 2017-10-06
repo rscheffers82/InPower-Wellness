@@ -6038,7 +6038,7 @@ ul li.is-dropdown-submenu-parent:hover > .is-dropdown-submenu {
   text-transform: uppercase; }
   /* line 232, /Users/Andrew/inpower/assets/scss/_main.sass */
   .off-canvas ul.menu li a:hover {
-    color: #7b7b7b;
+    color: #eae7e3;
     background-color: #f3f3f3; }
 
 /* line 236, /Users/Andrew/inpower/assets/scss/_main.sass */
@@ -7012,29 +7012,37 @@ body.page-template-template-thank-you .thank-you-message {
       margin: 0;
       padding: 3rem;
       float: none; }
-  /* line 1136, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 1135, /Users/Andrew/inpower/assets/scss/_main.sass */
+  #thankyouHeader {
+    width: 100%;
+    margin: 3rem 2rem; }
+    /* line 1138, /Users/Andrew/inpower/assets/scss/_main.sass */
+    #thankyouHeader h1 {
+      font-size: 2rem;
+      line-height: 2.35rem; }
+  /* line 1142, /Users/Andrew/inpower/assets/scss/_main.sass */
   .testimonial .tut-flexslider h2 {
     float: left;
     padding-left: 10%;
     padding-right: 0;
     margin-top: 1rem; }
-  /* line 1141, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 1147, /Users/Andrew/inpower/assets/scss/_main.sass */
   .testimonial .tut-flexslider h3 {
     width: 90%;
     margin: 0 auto;
     float: none; }
-  /* line 1145, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 1151, /Users/Andrew/inpower/assets/scss/_main.sass */
   .testimonial .tut-flexslider img {
     float: none;
     margin: 0 auto 2rem;
     width: 100%; }
-  /* line 1149, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 1155, /Users/Andrew/inpower/assets/scss/_main.sass */
   .sidebar {
     display: none; }
-  /* line 1151, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 1157, /Users/Andrew/inpower/assets/scss/_main.sass */
   .footer {
     margin-top: 2rem; }
-    /* line 1153, /Users/Andrew/inpower/assets/scss/_main.sass */
+    /* line 1159, /Users/Andrew/inpower/assets/scss/_main.sass */
     .footer .copyRight {
       float: left;
       border-top: 1px solid #7086a5;
@@ -7043,33 +7051,41 @@ body.page-template-template-thank-you .thank-you-message {
       width: 100%; } }
 
 @media screen and (max-width: 39.9375em) {
-  /* line 1163, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 1169, /Users/Andrew/inpower/assets/scss/_main.sass */
+  body.page-template-template-thank-you .header-image {
+    background-position: 36% 55%; }
+  /* line 1171, /Users/Andrew/inpower/assets/scss/_main.sass */
+  body.page-template-template-thank-you #thankyouHeader {
+    width: 100%;
+    margin: 0;
+    padding: 2rem; }
+  /* line 1177, /Users/Andrew/inpower/assets/scss/_main.sass */
   #hero .heroCTA {
     padding: 2rem;
     width: 100%; }
-    /* line 1166, /Users/Andrew/inpower/assets/scss/_main.sass */
+    /* line 1180, /Users/Andrew/inpower/assets/scss/_main.sass */
     #hero .heroCTA h2 {
       font-size: 2rem;
       line-height: 2.35rem; }
-  /* line 1170, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 1184, /Users/Andrew/inpower/assets/scss/_main.sass */
   .CTA-home h1 {
     line-height: 2rem;
     margin-bottom: 1rem; }
-  /* line 1175, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 1189, /Users/Andrew/inpower/assets/scss/_main.sass */
   body.page-template-template-lead-gen #leadGenHeader {
     width: 90%;
     margin: 1rem 2rem auto; }
-    /* line 1178, /Users/Andrew/inpower/assets/scss/_main.sass */
+    /* line 1192, /Users/Andrew/inpower/assets/scss/_main.sass */
     body.page-template-template-lead-gen #leadGenHeader h1 {
       font-size: 1.75rem;
       line-height: 2.1rem; }
-    /* line 1181, /Users/Andrew/inpower/assets/scss/_main.sass */
+    /* line 1195, /Users/Andrew/inpower/assets/scss/_main.sass */
     body.page-template-template-lead-gen #leadGenHeader p {
       width: 90%; }
-  /* line 1183, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 1197, /Users/Andrew/inpower/assets/scss/_main.sass */
   body.page-template-template-lead-gen #main {
     margin-top: -170px; }
-  /* line 1185, /Users/Andrew/inpower/assets/scss/_main.sass */
+  /* line 1199, /Users/Andrew/inpower/assets/scss/_main.sass */
   .footerTop {
     padding: 80px 0 20px; } }
 

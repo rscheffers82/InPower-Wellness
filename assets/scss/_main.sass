@@ -230,7 +230,7 @@ ul li.is-dropdown-submenu-parent
       color: #B4B0A5
       text-transform: uppercase
       &:hover
-        color: #7b7b7b
+        color: #eae7e3
         background-color: #f3f3f3
 
   ul.submenu
@@ -1132,6 +1132,12 @@ body.page-template-template-thank-you
       margin: 0
       padding: 3rem
       float: none
+  #thankyouHeader
+    width: 100%
+    margin: 3rem 2rem
+    h1
+      font-size: 2rem
+      line-height: 2.35rem
   .testimonial .tut-flexslider
     h2
       float: left
@@ -1159,6 +1165,14 @@ body.page-template-template-thank-you
 
 
 @include breakpoint(mobile down)
+  body.page-template-template-thank-you
+    .header-image
+      background-position: 36% 55%
+    #thankyouHeader
+      width: 100%
+      margin: 0
+      padding: 2rem
+
   #hero
     .heroCTA
       padding: 2rem
