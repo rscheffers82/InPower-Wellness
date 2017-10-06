@@ -13,17 +13,19 @@ Template Name: Thank you page
 					Congrats <?php echo get_query_var( 'fname' ); ?>. The first step to make your workplace even more awesome is <i class="fa fa-check" aria-hidden="true"></i>.
 				</h1>
 			</div>
-			<!-- <svg class="arc" viewBox="0 0 1440 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-			    <desc>Created with Sketch.</desc>
-			    <defs></defs>
-			    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-			        <g id="Desktop-HD" transform="translate(0.000000, -559.000000)" fill="#FFFFFF">
-			            <g id="Hero-Section" transform="translate(-23.000000, 121.000000)">
-			                <path d="M20,543 C256.648257,473 494.454496,438 733.418717,438 C972.382938,438 1215.5767,473 1463,543 L20,543 Z" id="Arc"></path>
-			            </g>
-			        </g>
-			    </g>
-			</svg> -->
+			<div class="svgWrapTop">
+				<svg class="arc" viewBox="0 0 1440 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				    <desc>Created with Sketch.</desc>
+				    <defs></defs>
+				    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				        <g id="Desktop-HD" transform="translate(0.000000, -559.000000)" fill="#FFFFFF">
+				            <g id="Hero-Section" transform="translate(-23.000000, 121.000000)">
+				                <path d="M20,543 C256.648257,473 494.454496,438 733.418717,438 C972.382938,438 1215.5767,473 1463,543 L20,543 Z" id="Arc"></path>
+				            </g>
+				        </g>
+				    </g>
+				</svg>
+			</div>
 		</div>
 		<div id="inner-content" class="row expanded">
 

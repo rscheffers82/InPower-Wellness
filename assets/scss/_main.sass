@@ -1029,21 +1029,6 @@ body.category-articles, body.page-template-template-thank-you-php, body.blog
         img
           width: 100%
 
-body.page-template-template-thank-you
-    main#main
-        margin-top: -150px
-    #thankyouHeader
-    		width: 48%
-    		position: relative
-    		color: #fff
-    		margin: 2.5rem auto
-    		text-shadow: 1px 1px 3px rgba(23, 23, 23, 0.31)
-    .thank-you-message
-        background-color: #F9F8F4
-        padding: 2.5rem
-        color: #7d7d7d
-        margin-bottom: 3rem
-
 .button.read-more
   background: transparent
   border: 1px solid goldenrod
@@ -1090,6 +1075,35 @@ body.single
       z-index: 1
       img.wp-post-image
         margin-bottom: 2rem
+
+/*********************
+/* THANK YOU PAGE
+/*********************
+
+
+body.page-template-template-thank-you
+    main#main
+      margin-top: -150px
+      article
+        padding: 1rem
+        &:last-of-type:after
+          display: none
+    #thankyouHeader
+      width: 48%
+      position: relative
+      color: #fff
+      margin: 5.5rem auto
+      text-shadow: 1px 1px 3px rgba(23, 23, 23, 0.31)
+      padding-right: 100px
+      h1
+        color: #fff
+        font-size: 2.75rem
+        line-height: 3.25rem
+    .thank-you-message
+      background-color: #F9F8F4
+      padding: 2.5rem
+      color: #7d7d7d
+      margin-bottom: 3rem
 
 
 
