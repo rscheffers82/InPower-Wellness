@@ -7013,11 +7013,11 @@ body.page-template-template-thank-you .thank-you-message {
       padding: 3rem;
       float: none; }
   /* line 1135, /Users/Andrew/inpower/assets/scss/_main.sass */
-  #thankyouHeader {
+  body.page-template-template-thank-you #thankyouHeader {
     width: 100%;
     margin: 3rem 2rem; }
     /* line 1138, /Users/Andrew/inpower/assets/scss/_main.sass */
-    #thankyouHeader h1 {
+    body.page-template-template-thank-you #thankyouHeader h1 {
       font-size: 2rem;
       line-height: 2.35rem; }
   /* line 1142, /Users/Andrew/inpower/assets/scss/_main.sass */
