@@ -57,6 +57,7 @@ function add_custom_query_var( $vars ){
   $vars[] = "fcontact";
   $vars[] .= "fdate";
   $vars[] .= "ftime";
+  $vars[] .= "fthank";
   return $vars;
 }
 add_filter( 'query_vars', 'add_custom_query_var' );
@@ -88,4 +89,3 @@ function custom_sidebar_init() {
 	 ) );
 }
 add_action( 'widgets_init', 'custom_sidebar_init' );
-

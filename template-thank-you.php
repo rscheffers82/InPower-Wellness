@@ -10,7 +10,12 @@ Template Name: Thank you page
 		<div class="header-image" style="background-image: url('<?php the_post_thumbnail_url('full'); ?>')">
 			<div id="thankyouHeader">
 				<h1>
-					Congrats <?php echo get_query_var( 'fname' ); ?>. The first step to make your workplace even more awesome is <i class="fa fa-check" aria-hidden="true"></i>.
+					<?php
+						$thank = get_query_var( 'fthank' );
+						$header_text = 'header_text_' . $thank;
+						$post_intro_text = 'post_intro_text_' . $thank;
+					?>
+					Congrats <?php echo get_query_var( 'fname' ); ?>. <?php the_field($header_text); ?>
 				</h1>
 			</div>
 			<div class="svgWrapTop">
@@ -51,7 +56,7 @@ Template Name: Thank you page
 							</p>
 							You're done!
 						</div>
-							<p class="margin-bottom">But if you want to learn more about how workplace wellness is changing how companies work check out Caitlin's latest article.</p>
+							<p class="margin-bottom"><?php the_field($post_intro_text); ?></p>
 
 							<?php global $query_articles; // required
 							$posts = query_posts($query_articles . 'category_name=articles&posts_per_page=1'); ?>
