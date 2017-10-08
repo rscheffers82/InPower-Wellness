@@ -8,7 +8,7 @@ jQuery(document).ready(function() {
       if (wpcf7Elm) {
         // console.log('wpcf7Elm: ', wpcf7Elm);
         console.log('EventHandler code run to attach JS code to Lead Gen form submit OK');
-        wpcf7Elm.addEventListener( 'wpcf7submit', function( event ) {
+        wpcf7Elm.addEventListener( 'wpcf7mailsent', function( event ) {
           var details = [];
           var times = [];
 
@@ -38,7 +38,7 @@ jQuery(document).ready(function() {
           if (times.length > 1) times = times.join(', ');
           else if (times.length === 1) times = times[0];
           if (times.lenght > 0) details.push('ftime=' + times);
-          
+
           const params = '/?' + details.join('&');
           var getUrl = window.location;
           var baseUrl = getUrl.protocol + "//" + getUrl.host + "/thank-you" ;
