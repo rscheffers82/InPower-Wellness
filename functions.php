@@ -75,6 +75,21 @@ function custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
+
+// Adds Custom Logo and Logo URL to login Page
+add_action('login_head', 'custom_login_logo');
+function custom_login_logo() {
+		echo '<style type="text/css">
+		h1 a { background-image:url('.get_template_directory_uri().'assets/images/login-logo.png) !important; background-size: 320px 88px !important;height: 88px !important; width: 320px !important; margin-bottom: 0 !important; padding-bottom: 10px !important; }
+		.login form { margin-top: 10px !important; }
+		</style>';
+}
+
+function url_login_logo(){
+		return get_bloginfo( 'wpurl' );
+}
+add_filter('login_headerurl', 'url_login_logo');
+
 //Registers new SIDEBAR for Footer
 function custom_sidebar_init() {
 	register_sidebar( array(
