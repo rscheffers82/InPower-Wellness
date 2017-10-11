@@ -12,7 +12,7 @@ Template Name: Thank you page
 				<h1>
 					<?php
 						$thank = get_query_var( 'fthank' );
-						$first_name =explode(" ", get_query_var( 'fname' ) )[0];
+						$first_name = explode(" ", get_query_var( 'fname' ) )[0];
 						$header_text = 'header_text_' . $thank;
 						$post_intro_text = 'post_intro_text_' . $thank;
 					?>
@@ -60,7 +60,9 @@ Template Name: Thank you page
 							<p class="margin-bottom"><?php the_field($post_intro_text); ?></p>
 
 							<?php global $query_articles; // required
-							$posts = query_posts($query_articles . 'category_name=articles&posts_per_page=1'); ?>
+							$category_posts = $thank === 'corporate' ? 'category_name=articles' : 'cat=8' ;
+							$posts = query_posts($query_articles . $category_posts . '&posts_per_page=1');
+							?>
 
 							<?php while ( have_posts() ) : the_post(); ?>
 								<!-- To see additional archive styles, visit the /parts directory -->
