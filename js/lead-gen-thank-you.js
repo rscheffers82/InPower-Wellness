@@ -37,7 +37,8 @@ jQuery(document).ready(function() {
 
           if (times.length > 1) times = times.join(', ');
           else if (times.length === 1) times = times[0];
-          if (times.lenght > 0) details.push('ftime=' + times);
+
+          if (typeof times === "string") details.push('ftime=' + times);
 
           const params = '/?' + details.join('&');
           var getUrl = window.location;
