@@ -12,10 +12,11 @@ Template Name: Thank you page
 				<h1>
 					<?php
 						$thank = get_query_var( 'fthank' );
+						$first_name =explode(" ", get_query_var( 'fname' ) )[0];
 						$header_text = 'header_text_' . $thank;
 						$post_intro_text = 'post_intro_text_' . $thank;
 					?>
-					Congrats <?php echo get_query_var( 'fname' ); ?>. <?php the_field($header_text); ?>
+					Congrats <?php echo $first_name; ?>. <?php the_field($header_text); ?>
 				</h1>
 			</div>
 			<div class="svgWrapTop">
