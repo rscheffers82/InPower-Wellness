@@ -126,5 +126,5 @@ function infographicMarkup() {
   </div>
   <?php
 }
-add_shortcode('infographic', 'infographicMarkup')
+add_shortcode('infographic', 'infographicMarkup');
 
