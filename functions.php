@@ -104,3 +104,27 @@ function custom_sidebar_init() {
 	 ) );
 }
 add_action( 'widgets_init', 'custom_sidebar_init' );
+
+// Add Custom shortcode to add Infographic Markup to page
+
+function infographicMarkup() {
+  ?>
+  <div class="infographic1">
+    <div class="outcomesWrap">
+      <h3>Specific Outcomes Include</h3>
+      <ul>
+        <li>Drinking more water</li>
+        <li>Eating more fruit &amp; veggies</li>
+        <li>QUitting Smoking</li>
+        <li>Running Again</li>
+        <li>Fewer sick days</li>
+        <li>Being resilient to setbacks</li>
+        <li>Healthier work-life balance</li>
+        <li>Fewer emotional upsets at work</li>
+      </ul>
+    </div>
+  </div>
+  <?php
+}
+add_shortcode('infographic', 'infographicMarkup')
+
