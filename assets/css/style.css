@@ -6270,7 +6270,7 @@ ul li.is-dropdown-submenu-parent:hover > .is-dropdown-submenu {
   padding-top: 2rem; }
 
 /* line 394, /Users/Andrew/inpower/assets/scss/_main.sass */
-body.page-id-218 .header-image:before {
+.header-image:before {
   content: "";
   height: 100%;
   width: 100%;
@@ -6283,7 +6283,7 @@ body.page-id-218 .header-image:before {
   padding: 1rem 0rem 0rem; }
 
 /* line 407, /Users/Andrew/inpower/assets/scss/_main.sass */
-body.page-template-default main#main, body.page-template-no-sidebar-page main#main {
+body.page-template-default main#main, body.page-template-no-sidebar-page main#main, body.page-template-template-full-width main#main {
   margin-top: -325px; }
 
 /* line 410, /Users/Andrew/inpower/assets/scss/_main.sass */
