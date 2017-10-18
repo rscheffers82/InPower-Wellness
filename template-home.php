@@ -43,10 +43,17 @@ Template Name: Home
 							<h2><?php the_field('benefits_title');?></h2>
 							<p><?php the_field('benefits_content1');?></p>
 						</div>
-						<div class="large-4 medium-6 columns">
-							<h4><?php the_field('benefits_title2');?></h4>
-							<p><?php the_field('benefits_content2');?></p>
+				</section>
+
+				<section class="row benefitsGraphic">
+					<div class="large-12 medium-12 columns">
+						<h2><?php the_field('infographic_header');?></h2>
+						<div class="row">
+							<div class="large-2 large-offset-2 columns"><img src="/wp-content/uploads/2017/10/InPower_Web_1_44_Percent.png" alt="44% lost weight"/> Lost Weight</div>
+							<div class="large-2 columns"><img src="/wp-content/uploads/2017/10/InPower_Web_1_47_Percent.png" alt="47% Increased their energy"/>Reported Increased Energy</div>
+							<div class="large-2 columns"><img src="/wp-content/uploads/2017/10/InPower_Web_1_79_Percent.png" alt="79% Were excercising More"/>Were Exercising More</div>
 						</div>
+					</div>
 				</section>
 
 
