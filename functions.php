@@ -123,7 +123,7 @@ function infographicMarkup() {
         <li>Fewer emotional upsets at work</li>
       </ul>
     </div>
-  </div>'
+  </div>';
 }
 add_shortcode('infographic', 'infographicMarkup');
 
