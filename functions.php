@@ -111,11 +111,11 @@ function infographicMarkup() {
   return
   '<div class="infographic1">
     <div class="outcomesWrap">
-      <h3>Specific Outcomes Include</h3>
+      <h3>Specific Outcomes Include:</h3>
       <ul>
         <li>Drinking more water</li>
         <li>Eating more fruit &amp; veggies</li>
-        <li>QUitting Smoking</li>
+        <li>Quitting Smoking</li>
         <li>Running Again</li>
         <li>Fewer sick days</li>
         <li>Being resilient to setbacks</li>

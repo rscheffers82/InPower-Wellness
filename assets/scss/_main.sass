@@ -1138,19 +1138,23 @@ body.page-template-template-thank-you
   position: relative
   .outcomesWrap
     width: 500px
-    position: absolute
-    left: 50%
-    top: 20%
+    position: relative
+    float: right
     background: #fff
-    border: 2px solid $lightgray
+    border: 6px solid #D2D2D2
     padding: 2rem
+    margin-right: 4rem
     &::after
       content: ""
       background-image: url('/wp-content/uploads/2017/10/InPower_Web_2_Water_Salad.png')
-      height: 100px
-      width: 75px
-      bottom: 0
-      right: 0
+      height: 160px
+      width: 180px
+      bottom: -22px
+      right: -15px
+      background-size: cover
+      position: absolute
+    h3
+      margin-bottom: 1.5rem
     ul
       list-style: none
       margin-left: 0
@@ -1159,7 +1163,15 @@ body.page-template-template-thank-you
         background: url(../images/greencheck.png) no-repeat 0px 2px
         background-size: 27px
         font-weight: bold
-        margin-bottom: .25rem
+        margin-bottom: .75rem
+
+@media only screen and (max-width: 1000px)
+  .infographic1
+    height: auto
+    background-size: 146%
+    background-repeat: no-repeat
+    .outcomesWrap
+      width: 100%
 
 
 
@@ -1168,6 +1180,8 @@ body.page-template-template-thank-you
 /*********************
 
 @include breakpoint(medium down)
+  .infographic1
+    background-size: 200%
   .columns
     padding: 0 1rem 0 1rem
   .top-bar
@@ -1212,6 +1226,10 @@ body.page-template-template-thank-you
 
 
 @include breakpoint(mobile down)
+  .infographic1
+    background-size: 300%
+    background-position: -52px 0px
+    padding-top: 312px
   body.page-template-template-thank-you
     .header-image
       background-position: 36% 55%
