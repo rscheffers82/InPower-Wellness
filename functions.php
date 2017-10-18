@@ -108,8 +108,8 @@ add_action( 'widgets_init', 'custom_sidebar_init' );
 // Add Custom shortcode to add Infographic Markup to page
 
 function infographicMarkup() {
-  ?>
-  <div class="infographic1">
+  return
+  '<div class="infographic1">
     <div class="outcomesWrap">
       <h3>Specific Outcomes Include</h3>
       <ul>
@@ -123,8 +123,7 @@ function infographicMarkup() {
         <li>Fewer emotional upsets at work</li>
       </ul>
     </div>
-  </div>
-  <?php
+  </div>'
 }
 add_shortcode('infographic', 'infographicMarkup');
 
