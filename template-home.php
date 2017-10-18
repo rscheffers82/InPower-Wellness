@@ -59,7 +59,7 @@ Template Name: Home
 					</div>
 				</section>
 
-				<br>
+				<hr>
 
 				<!-- Testimonial section -->
 				<section class="testimonial">
