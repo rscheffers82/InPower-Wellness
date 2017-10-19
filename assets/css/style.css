@@ -7086,11 +7086,11 @@ body.page-template-template-thank-you .thank-you-message {
       position: absolute; }
     /* line 1195, /Users/Andrew/inpower/assets/scss/_main.sass */
     .infographic1 .outcomesWrap h3 {
-      margin-bottom: 1.5rem; }
+      margin: 0 0 1.5rem 1rem; }
     /* line 1197, /Users/Andrew/inpower/assets/scss/_main.sass */
     .infographic1 .outcomesWrap ul {
       list-style: none;
-      margin-left: 20px; }
+      margin-left: 35px; }
       /* line 1200, /Users/Andrew/inpower/assets/scss/_main.sass */
       .infographic1 .outcomesWrap ul li {
         padding-left: 35px;
