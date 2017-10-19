@@ -261,6 +261,13 @@ ul li.is-dropdown-submenu-parent
   background-position: 100%, 0%
   height: 550px
   position: relative
+  &::after
+    content: ""
+    height: 100%
+    width: 100%
+    background: rgba(239,122,35,.3)
+    position: absolute
+    top: 0
   .heroCTA
     width: 470px
     float: right
@@ -974,6 +981,14 @@ div.wpcf7-mail-sent-ok
   color: #fff
   padding: .5rem 1rem
 
+
+.social
+  margin-bottom: 2rem
+  img
+    height: 30px
+    margin-right: 8px
+    &:hover
+      opacity: .7
 
 /*********************
 /* LEAD GEN PAGE TEMPLATE
