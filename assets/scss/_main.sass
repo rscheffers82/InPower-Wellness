@@ -261,7 +261,7 @@ ul li.is-dropdown-submenu-parent
   background-position: 100%, 0%
   height: 550px
   position: relative
-  &::after
+  &::before
     content: ""
     height: 100%
     width: 100%
@@ -987,6 +987,7 @@ div.wpcf7-mail-sent-ok
   img
     height: 30px
     margin-right: 8px
+    +cssTransition(.3s)
     &:hover
       opacity: .7
 
