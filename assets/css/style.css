@@ -7061,7 +7061,7 @@ body.page-template-template-thank-you .thank-you-message {
 .infographic1 {
   width: 100%;
   height: 400px;
-  background-image: url("/wp-content/uploads/2017/08/MtnBiker@4x-100.jpg");
+  background-image: url("/wp-content/uploads/2017/10/MtnBiker@4x-100.jpg");
   background-size: cover;
   position: relative;
   margin: 6rem 0; }
@@ -7090,7 +7090,7 @@ body.page-template-template-thank-you .thank-you-message {
     /* line 1197, /Users/Andrew/inpower/assets/scss/_main.sass */
     .infographic1 .outcomesWrap ul {
       list-style: none;
-      margin-left: 0; }
+      margin-left: 20px; }
       /* line 1200, /Users/Andrew/inpower/assets/scss/_main.sass */
       .infographic1 .outcomesWrap ul li {
         padding-left: 35px;
