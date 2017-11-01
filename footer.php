@@ -48,5 +48,15 @@
 			</div>  <!-- end .main-content -->
 		</div> <!-- end .off-canvas-wrapper -->
 		<?php wp_footer(); ?>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108417432-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-108417432-1');
+		</script>
+
 	</body>
 </html> <!-- end page -->
