@@ -29,15 +29,18 @@
 						<!-- To see additional archive styles, visit the /parts directory -->
 						<?php get_template_part( 'parts/loop', 'archive' ); ?>
 
-					<?php endwhile;
+					<?php endwhile;?>
 
-					// If there are older posts show the previous posts link
-					if($link = get_next_posts_link()) {
-						$linkUrl = echo get_next_post_link();
-						printf('<a href="%s" class="button read-more prev">« Previous Articles</a>', $linkUrl);
+					<!-- If there are older posts show the previous posts link -->
+					<div class="prevPosts">
+						<?php 
+						if($link = get_next_posts_link()) {
+							//$linkUrl = echo get_next_post_link();
+							echo get_next_posts_link('« Previous Posts');
 
-					}
-					?>
+						}
+						?>
+					</div>
 
 					<?php wp_reset_query(); // reset the query ?>
 

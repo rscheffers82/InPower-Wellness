@@ -20,7 +20,7 @@ function site_scripts() {
     }
 
     //load font-awesome in the theme
-    wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/vendor/font-awesome-4.7.0/css/font-awesome.min.css', array(), '', 'all' );
+    //wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/vendor/font-awesome-4.7.0/css/font-awesome.min.css', array(), '', 'all' );
 
     // load momentjs for quick date formatting from Lead Gen to Thank you page
     wp_enqueue_script( 'moment-js', 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js', array( 'jquery' ), '', true );
