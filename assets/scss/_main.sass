@@ -336,10 +336,15 @@ body.home
 
 // TESTIMONIALS
 .testimonial
-  margin: 5rem 0 10rem
+  margin: 0 0 5rem
+  background: url('http://inpowerwellness.com/wp-content/uploads/2017/12/Woman_Hiking-8.jpg') no-repeat top left
+  background-size: cover
+  width: 124%
+  margin-left: -12%
+  padding: 2rem 10% 2rem
   h3, h2
     text-transform: none
-    color: $bodyColor
+    color: #fff
   h3
     font-weight: 400
     font-style: italic
@@ -878,7 +883,7 @@ h1.page-title
           background-color: $orange
           bottom: -15px
           left: 0
-      #sb_instagram .sb_instagram_header h3.sbi_no_bio
+      #sb_instagram .sb_instagram_header h3
         font-weight: 300
         padding-top: 3px !important
         // no uderline for instagram title
@@ -1271,6 +1276,10 @@ body.page-template-template-thank-you
 
 
 @include breakpoint(mobile down)
+  .testimonial
+    width: 110%
+    margin-left: -16px
+    padding: 2rem 0 1rem
   .infographic1
     background-size: 300%
     background-position: -52px 0px
@@ -1293,6 +1302,8 @@ body.page-template-template-thank-you
       h2
         font-size: 2rem
         line-height: 2.35rem
+      p
+        font-weight: bold
   .CTA-home
     h1
       line-height: 2rem
@@ -1307,10 +1318,13 @@ body.page-template-template-thank-you
         line-height: 2.1rem
       p
         width: 90%
+        font-weight: bold
     #main
       margin-top: -170px
   .footerTop
     padding: 80px 0 20px
+  #footerwidgets li:nth-of-type(2)
+    padding-bottom: 2rem
 
 hr.form-divide
   margin: 2rem auto 4rem

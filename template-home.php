@@ -59,12 +59,10 @@ Template Name: Home
 					</div>
 				</section>
 
-				<hr>
-
 				<!-- Testimonial section -->
-				<section class="testimonial">
-					<?php thinkup_testimonials(9000); ?>
-				</section>
+					<section class="testimonial">
+						<?php thinkup_testimonials(9000); ?>
+					</section>
 
 				<!-- Call to Action section -->
 				<section class="CTA-home">
