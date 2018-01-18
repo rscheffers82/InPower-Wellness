@@ -297,7 +297,7 @@ ul li.is-dropdown-submenu-parent
 .arc
   position: absolute
   left: 0
-  bottom: 0
+  bottom: -1px
 
 /*********************
 /* HOMEPAGE
@@ -335,7 +335,7 @@ body.home
 
 
 // TESTIMONIALS
-.testimonial
+body.home .testimonial
   margin: 0 0 5rem
   background: url('http://inpowerwellness.com/wp-content/uploads/2017/12/Woman_Hiking-8.jpg') no-repeat top left
   background-size: cover
@@ -345,6 +345,8 @@ body.home
   h3, h2
     text-transform: none
     color: #fff
+
+.testimonial
   h3
     font-weight: 400
     font-style: italic
@@ -808,6 +810,7 @@ h1.page-title
 .sidebar
   .testimonial
     margin: 0 2rem
+    background: none
     img
       display: block
       margin: 0 auto
@@ -816,12 +819,14 @@ h1.page-title
       font-size: 1.25rem
       float: none
       margin: 0 auto 0 3rem
-      width: 85%
+      width: 70%
+      color: $HeadlineColor
     h2
       width: 70%
       float: right
       margin-top: 1rem
       font-size: 1.25rem
+      color: $HeadlineColor
 
 #searchsubmit
 
